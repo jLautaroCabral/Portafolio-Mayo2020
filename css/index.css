@@ -1,0 +1,93 @@
+:root {
+    --size-face: 100%;
+    /* --size-face: 300px; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cont {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.artifact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.face {
+    width: var(--size-face);
+    height: var(--size-face);
+    margin: 0;
+}
+
+.face.main {
+    position: relative;
+    background-color: rgb(238, 255, 2);
+    will-change: transform;
+    transition: transform 1s ease-in-out;
+}
+
+.face.center {
+    position: absolute;
+    background-color: navy;
+}
+
+.face.up {
+    position: absolute;
+    top: calc(-100%);
+    background-color: chartreuse;
+}
+
+.face.down {
+    position: absolute;
+    bottom: calc(-100%);
+    background-color: rgb(231, 12, 184);
+}
+
+.face.left {
+    position: absolute;
+    left: calc(-100%);
+    background-color: rgb(12, 231, 231);
+}
+
+.face.right {
+    position: absolute;
+    right: calc(-100%);;
+    background-color: rgb(231, 12, 12);
+}
+
+.face-content-test {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    display: flex;
+    padding: 2%;
+}
+
+.content section{
+    padding: 10%;
+    border-radius: 20px;
+    background-color: ivory;
+}
+
+.artifact:hover .face.main {
+    transform: translateX(-100%);
+}
