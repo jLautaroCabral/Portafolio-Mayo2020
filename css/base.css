@@ -1,14 +1,12 @@
 :root {
     --size-face: 100%;
-    /* --size-face: 300px; */
+    /* --size-face: 800px; */
 }
-
 body {
     margin: 0;
     padding: 0;
 }
-
-.cont {
+.view {
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -20,7 +18,7 @@ body {
     left: 0;
 }
 
-.artifact {
+.container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -32,14 +30,12 @@ body {
 .face {
     width: var(--size-face);
     height: var(--size-face);
-    margin: 0;
 }
 
 .face.main {
     position: relative;
     background-color: rgb(238, 255, 2);
     will-change: transform;
-    transition: transform 1s ease-in-out;
 }
 
 .face.center {
@@ -69,25 +65,4 @@ body {
     position: absolute;
     right: calc(-100%);;
     background-color: rgb(231, 12, 12);
-}
-
-.face-content-test {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.content{
-    display: flex;
-    padding: 2%;
-}
-
-.content section{
-    padding: 10%;
-    border-radius: 20px;
-    background-color: ivory;
-}
-
-.artifact:hover .face.main {
-    transform: translateX(-100%);
 }

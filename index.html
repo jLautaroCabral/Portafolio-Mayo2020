@@ -2,26 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/face-center-style.css">
 </head>
 <body>
-    <div class="cont">
-        <div class="artifact">
-            <div class="face main">
+    <div class="view">
+        <div class="container">
+            <div class="face main" id="faceMain">
 
                 <div class="face center">
-                    <div class="content">
-                        <section>
-                            <h1>Example</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia veniam repellendus inventore, rerum animi eveniet dolorum velit! Quam, autem!</p>
+                    <div class="screen-body">
+                        <section class="hero">
+                            <div class="hero__info">
+                                <h1 class="hero__info--title">Title?</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus provident alias esse voluptas commodi rem accusamus iure adipisci vero!</p>
+                            </div>
+                            <div class="hero__img">
+                                <img src="imgs/lautaro-cabral.jpg" width="200px" height="200px" alt="">
+                            </div>
+                            <div class="hero__info">
+                                <h1 class="hero__info--title">Title?</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus provident alias esse voluptas commodi rem accusamus iure adipisci vero!</p>
+                            </div>
                         </section>
+                        <nav class="navigation">
+                            <div class="row__left" id="frontEndButton">
+                                aaa
+                            </div>
+                            <div class="row__center" id="devButton">
+                                aaa
+                            </div>
+                            <div class="row__right" id="backEndButton">
+                                aaa
+                            </div>
+                            <div class="navigation__bottom" id="othersButton">
+                                aaa
+                            </div>
+                        </nav>
                     </div>
                 </div>
 
                 <div class="face left">
-                    <div class="content">
+                    <div class="screen-body">
                         <section>
                             <h1>Example</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia veniam repellendus inventore, rerum animi eveniet dolorum velit! Quam, autem!</p>
@@ -29,7 +53,7 @@
                     </div>
                 </div>
                 <div class="face up">
-                    <div class="content">
+                    <div class="screen-body">
                         <section>
                             <h1>Example</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia veniam repellendus inventore, rerum animi eveniet dolorum velit! Quam, autem!</p>
@@ -38,7 +62,7 @@
                 </div>
 
                 <div class="face down">
-                    <div class="content">
+                    <div class="screen-body">
                         <section>
                             <h1>Example</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia veniam repellendus inventore, rerum animi eveniet dolorum velit! Quam, autem!</p>
@@ -47,7 +71,7 @@
                 </div>
 
                 <div class="face right">
-                    <div class="content">
+                    <div class="screen-body">
                         <section>
                             <h1>Example</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia veniam repellendus inventore, rerum animi eveniet dolorum velit! Quam, autem!</p>
@@ -57,5 +81,6 @@
             </div>
         </div>
     </div>
+    <script src="js/face-center.js"></script>
 </body>
 </html>
