@@ -2,7 +2,7 @@
     --size-face: 100%;
     /* --size-face: 800px; */
 }
-body {
+body, h1{
     margin: 0;
     padding: 0;
 }
@@ -30,39 +30,63 @@ body {
 .face {
     width: var(--size-face);
     height: var(--size-face);
+    margin: 0;
+    padding: 0;
 }
 
 .face.main {
     position: relative;
-    background-color: rgb(238, 255, 2);
     will-change: transform;
 }
 
 .face.center {
     position: absolute;
-    background-color: navy;
 }
 
 .face.up {
     position: absolute;
     top: calc(-100%);
-    background-color: chartreuse;
 }
 
 .face.down {
     position: absolute;
     bottom: calc(-100%);
-    background-color: rgb(231, 12, 184);
 }
 
 .face.left {
     position: absolute;
     left: calc(-100%);
-    background-color: rgb(12, 231, 231);
 }
 
 .face.right {
     position: absolute;
-    right: calc(-100%);;
-    background-color: rgb(231, 12, 12);
+    right: calc(-100%);
 }
+
+.screen-body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -10;
+    visibility: visible;
+    transform: scale(3);
+}
+
+/* .background-video {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+    background-color: red;
+} */

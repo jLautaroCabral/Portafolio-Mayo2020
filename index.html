@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/face-center-style.css">
@@ -14,31 +14,47 @@
 
                 <div class="face center">
                     <div class="screen-body">
+
                         <section class="hero">
                             <div class="hero__info">
-                                <h1 class="hero__info--title">Title?</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus provident alias esse voluptas commodi rem accusamus iure adipisci vero!</p>
+                                <h1 class="hero__info--title">Sobre mí</h1>
+                                <p class="hero__info--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus provident alias esse voluptas commodi rem accusamus iure adipisci vero!</p>
                             </div>
                             <div class="hero__img">
-                                <img src="imgs/lautaro-cabral.jpg" width="200px" height="200px" alt="">
+                                <img src="imgs/lautaro-cabral.jpg" width="255px" height="255px" alt="">
                             </div>
                             <div class="hero__info">
-                                <h1 class="hero__info--title">Title?</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus provident alias esse voluptas commodi rem accusamus iure adipisci vero!</p>
+                                <h1 class="hero__info--title">Sobre mi portafolio</h1>
+                                <p class="hero__info--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus provident alias esse voluptas commodi rem accusamus iure adipisci vero!</p>
                             </div>
                         </section>
+
                         <nav class="navigation">
+
                             <div class="row__left" id="frontEndButton">
-                                aaa
+                                <div class="area">
+                                    <div class="area__img frontend"></div>
+                                    <div class="area__title">Front End</div>
+                                </div>
                             </div>
+
                             <div class="row__center" id="devButton">
-                                aaa
+                                <div class="area">
+                                    <div class="area__img dev"></div>
+                                    <div class="area__title">Desarrollo</div>
+                                </div>
                             </div>
+
                             <div class="row__right" id="backEndButton">
-                                aaa
+                                <div class="area">
+                                    <div class="area__img backend"></div>
+                                    <div class="area__title">Back End</div>
+                                </div>
                             </div>
                             <div class="navigation__bottom" id="othersButton">
-                                aaa
+                                <div class="area">
+                                    <div class="area__title">Otros</div>
+                                </div>
                             </div>
                         </nav>
                     </div>
@@ -52,6 +68,7 @@
                         </section>
                     </div>
                 </div>
+
                 <div class="face up">
                     <div class="screen-body">
                         <section>
@@ -80,7 +97,10 @@
                 </div>
             </div>
         </div>
+        <video id="video" loop autoplay preload muted>
+            <source src="imgs/video-background.mp4" type='video/mp4' />
+        </video>
     </div>
-    <script src="js/face-center.js"></script>
+    <script src="js/movement.js"></script>
 </body>
 </html>
