@@ -2,10 +2,18 @@
     --size-face: 100%;
     /* --size-face: 800px; */
 }
-body, h1{
+
+/* .button {
+    width: 100px;
+    height: 100px;
+    background: red;
+} */
+
+body, h1, h2{
     margin: 0;
     padding: 0;
 }
+
 .view {
     width: 100vw;
     height: 100vh;
