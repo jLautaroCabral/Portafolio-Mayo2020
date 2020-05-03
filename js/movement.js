@@ -15,7 +15,7 @@ function centerTo(String) {
     ],
     {
         duration: 1200,
-        easing: 'ease-in',
+        easing: 'ease-in-out',
         fill: 'forwards'
     })
     backgroundTo(String);
@@ -34,16 +34,16 @@ function backgroundTo(String) {
     ],
     {
         duration: 1200,
-        easing: 'ease-in',
+        easing: 'ease-in-out',
         fill: 'forwards'
     })
 }
 
 
-let $backEndButton = document.getElementById('backEndButton');
-let $frontEndButton = document.getElementById('frontEndButton');
-let $devButton = document.getElementById('devButton');
-let $othersButton = document.getElementById('othersButton');
+const $backEndButton = document.getElementById('backEndButton');
+const $frontEndButton = document.getElementById('frontEndButton');
+const $devButton = document.getElementById('devButton');
+const $othersButton = document.getElementById('othersButton');
         
 $backEndButton.addEventListener('click', () => centerTo('translateX(-100%)'));
 $frontEndButton.addEventListener('click', () => centerTo('translateX(100%)'));
