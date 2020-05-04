@@ -1,4 +1,4 @@
-let $skillsAll = document.querySelectorAll('.skills');
+/* let $skillsAll = document.querySelectorAll('.skills');
 let $buttons = [$frontEndButton, $devButton, $backEndButton,  $othersButton];
 
 for (let index = 0; index < $buttons.length; index++) {
@@ -15,3 +15,4 @@ for (let index = 0; index < $buttons.length; index++) {
 
 
 
+ */

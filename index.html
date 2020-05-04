@@ -6,10 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/face-center-style.css">
+    <link rel="stylesheet" href="css/face-left-style.css">
 </head>
 <body>
     <div class="view">
-        <div class="container">
+        <div class="main-container">
             <div class="face main" id="faceMain">
 
                 <div class="face center">
@@ -43,14 +44,14 @@
                                     <div class="area__img frontend"></div>
                                     <div class="area__title">Front End</div>
                                     <div class="effect-selector"></div>
-                                    <div class="skills skillsFrontEnd">
+                                    <!-- <div class="skills skillsFrontEnd">
                                         <h3>HTML5</h3>
                                         <h3>CSS</h3>
                                         <h3>JavaScript</h3>
                                         <h3>Responsive Design</h3>
                                         <h3>Bootstrap</h3>
                                         <h3>Integración con APIs</h3>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
 
@@ -59,7 +60,7 @@
                                     <div class="area__img dev"></div>
                                     <div class="area__title">Desarrollo</div>
                                     <div class="effect-selector"></div>
-                                    <div class="skills skillsDev">
+                                    <!-- <div class="skills skillsDev">
                                         <h3>Git</h3>
                                         <h3>SCRUM</h3>
                                         <h3>Arquitecturas de software</h3>
@@ -67,7 +68,7 @@
                                         <h3>UML</h3>
                                         <h3>Postman</h3>
                                         <h3>Linux / Windows</h3>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
 
@@ -76,24 +77,24 @@
                                     <div class="area__img backend"></div>
                                     <div class="area__title">Back End</div>
                                     <div class="effect-selector"></div>
-                                    <div class="skills skillsBackEnd">
+                                    <!-- <div class="skills skillsBackEnd">
                                         <h3>PHP</h3>
                                         <h3>Laravel</h3>
                                         <h3>SQL</h3>
                                         <h3>MySQL</h3>
                                         <h3>Desarrollo de APIs REST</h3>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="column column__bottom" id="othersButton">
                                 <div class="area">
                                     <div class="area__title">Otros</div>
                                     <div class="effect-selector"></div>
-                                    <div class="skills skillsOther">
+                                    <!-- <div class="skills skillsOther">
                                         <h3>C#</h3>
                                         <h3>Java</h3>
                                         <h3>Seguridad</h3>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </nav>
@@ -102,10 +103,84 @@
 
                 <div class="face left">
                     <div class="screen-body">
-                        <section>
-                            <h1>Example</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia veniam repellendus inventore, rerum animi eveniet dolorum velit! Quam, autem!</p>
-                        </section>
+                        <div class="flex-container">
+
+                            <section class="examples">
+
+                                <article class="examples__item">
+                                    <div class="item__info">
+                                        <h2>Animaciones</h2>
+                                        <p>CSS y JavaScript me permiten convertir páginas estáticas en páginas animadas e interactivas, el límite está en la creatividad. En este apartado dejo una muestra de animaciones, puedes interactuar con ellas haciendo click en los siguientes botones:</p>
+                                    </div>
+                                    <div class="item__example">
+                                        <div class="example__button" id="buttonExample1">Botón</div>
+                                        <div class="example__button" id="buttonExample2">
+                                            <div class="eyeanimation" id="eyeanimation"></div>
+                                            Botón
+                                            <div class="eyeanimation" id="eyeanimation"></div>
+                                        </div>
+                                        <div class="example__button" id="buttonExample3">
+                                            <div class="text">Botón</div>
+                                            <div class="windows"><p>....</p></div>
+                                            <!-- <div class="anchor">
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="examples__item">
+                                    <div class="item__info">
+                                        <h2>CSS Grid</h2>
+                                        <p>CSS y JavaScript me permiten convertir páginas estáticas en páginas animadas e interactivas, el límite está en la creatividad. En este apartado dejo una muestra de animaciones, puedes interactuar con ellas haciendo click en los siguientes botones:</p>
+                                    </div>
+                                    <div class="item__example">
+
+                                    </div>
+                                </article>
+
+                                <article class="examples__item">
+                                    <div class="item__info">
+                                        <h2>Integración con APIs</h2>
+                                        <p>CSS y JavaScript me permiten convertir páginas estáticas en páginas animadas e interactivas, el límite está en la creatividad. En este apartado dejo una muestra de animaciones, puedes interactuar con ellas haciendo click en los siguientes botones:</p>
+                                    </div>
+                                    <div class="item__example">
+                                </article>
+
+                            </section>
+
+                            <section class="knowledge">
+                                <article class="knowledge__list">
+                                    <h3>Conocimientos:</h3>
+                                    <ul>
+                                        <li>HTML5</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>Responsive Design</li>
+                                        <li>Integración con APIs</li>
+                                    </ul>
+                                </article>
+                                <article class="knowledge__lastcourses">
+                                    <h3>Mis ultimas 3 certificaciones sobre Front End</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt unde sit molestiae beatae, quaerat repudiandae!</p>
+                                    <div class="lastcourses__item">AAA</div>
+                                    <div class="lastcourses__item">AAA</div>
+                                    <div class="lastcourses__item">AAA</div>
+                                </article>
+                                <article class="knowledge__learning">
+                                    <h3>¿Qué estoy aprendiendo?</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo voluptates quisquam laborum nemo nisi officiis.</p>
+                                    <div class="learning__item">AAA</div>
+                                    <div class="learning__item">AAA</div>
+                                    <div class="learning__item">AAA</div>
+                                </article>
+                            </section>
+
+                            <div class="btn-leftToCenter">
+                                <div class="rightArrow">
+                                </div>
+                                <h2>Back to<br>Home</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -143,5 +218,6 @@
     </div>
     <script src="js/movement.js"></script>
     <script src="js/face-center.js"></script>
+    <script src="js/face-left.js"></script>
 </body>
 </html>
