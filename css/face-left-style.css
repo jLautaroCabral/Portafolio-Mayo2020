@@ -82,11 +82,6 @@
     background-repeat: no-repeat;
     transform: scaleY(0);
     transition-duration: 0.2s;
-    /* animation: ouch;
-    animation-duration: 1s;
-    animation-play-state: paused;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out; */
 }
 
 .eyesopen {
@@ -94,36 +89,80 @@
 }
 
 #buttonExample3 {
-    padding-top: 0.45em;
     position: relative;
-/*     animation: submarine-down, submarine-float;
-    animation-duration: 1s, 2s;
-    animation-play-state: paused, paused;
-    animation-iteration-count: 1, infinite;
-    animation-direction: initial, alternate;
-    animation-timing-function: cubic-bezier(.34,0,.7,1.18), ease-in-out;
-    animation-fill-mode: forwards; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#buttonExample3 .text {
+#submarine-text {
     transition-duration: 1s;
 } 
-/* #buttonExample3 .anchor {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border: red 1px solid;
-} */
-#buttonExample3 .windows {
+
+
+#submarine-hatch {
     position: absolute;
+    height: 100%;
+    width: 20%;
+    background: #0f4c75;
+    z-index: -1;
+}
+
+#submarine-periscope {
+    transform-origin: bottom left;
+    transition-duration: 1.5s;
+    position: absolute;
+    width: 0.5em;
+    height: 1.5em;
+    border-radius: 20%;
+    border-top: #0f4c75 0.5em solid;
+    border-left: #0f4c75 0.5em solid;
+    transform: rotate(90deg);
+    top: -1em;
+    right: 1em;
+    z-index: -1;
+}
+
+#submarine-tail {
+    position: absolute;
+    display: flex;
+    height: 0.6em;
+    width: 3em;
+    background: #0f4c75;
+    align-items: center;
+    z-index: -1;
+}
+
+#submarine-aleta {
+
+    height: 1.5em;
+    width: 0.5em;
+    border-radius: 40%;
+    background:#0f4c75;
+    z-index: -1;
+}
+
+#submarine-windows {
+    position: absolute;
+    display: flex;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background: red;
-    font-size: 4em;
     box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+#submarine-windows .window {
+    border-radius: 50%;
+    width: 0.6em;
+    height: 0.6em;
+    border: darkblue 2px solid;
+    background: cyan;
+    transform: scale(0);
+}
+
 
 .knowledge {
     text-shadow: 0px 2px 1px #1b262c;
@@ -212,23 +251,9 @@
     } 
 }
 
-/* @keyframes submarine-down {
-    0% {
-
-    }
-    100% {
-        transform: translateY(1200%);
-    }
+.fadeOut {
+    opacity: 0;
 }
-
-@keyframes submarine-float {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(-100%);
-    }
+.fadeIn {
+    opacity: 1;
 }
-
-@keyframes submarine-go {
-} */
