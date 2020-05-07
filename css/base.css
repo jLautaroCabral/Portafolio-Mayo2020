@@ -19,6 +19,10 @@ body, h1, h2, h3, p{
     margin: 0;
     padding: 0;
 }
+a {
+    color: #f2f6f5;;
+    text-shadow: none;
+}
 
 .view {
     width: 100vw;

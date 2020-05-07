@@ -1,6 +1,43 @@
 const $faceMain = document.getElementById('faceMain');
 const $videoBackground = document.getElementById('video');
 
+function fromToCenter(String) {
+    $faceMain.animate
+    ([
+        //from
+        {
+            transform: String
+        },
+        // to
+        {
+            transform: 'translateX(0)'
+        }
+    ],
+    {
+        duration: 1200,
+        easing: 'ease-in-out',
+        fill: 'forwards'
+    })
+    backgroundFromToCenter(String);
+}
+function backgroundFromToCenter(String) {
+    $videoBackground.animate
+    ([
+        //from
+        {
+            transform: `${String} scale(3)`
+        },
+        // to
+        {
+            transform: `translateX(0) scale(3)`
+        }
+    ],
+    {
+        duration: 1200,
+        easing: 'ease-in-out',
+        fill: 'forwards'
+    })
+}
 function centerTo(String) {
     $faceMain.animate
     ([
@@ -44,8 +81,12 @@ const $backEndButton = document.getElementById('backEndButton');
 const $frontEndButton = document.getElementById('frontEndButton');
 const $devButton = document.getElementById('devButton');
 const $othersButton = document.getElementById('othersButton');
+
+const $leftToCenterButton = document.getElementById('leftToCenterButton');
         
 $backEndButton.addEventListener('click', () => centerTo('translateX(-100%)'));
 $frontEndButton.addEventListener('click', () => centerTo('translateX(100%)'));
 $devButton.addEventListener('click', () => centerTo('translateY(100%)'));
 $othersButton.addEventListener('click', () => centerTo('translateY(-100%)'));
+
+$leftToCenterButton.addEventListener('click', () => fromToCenter('translateX(100%)'))

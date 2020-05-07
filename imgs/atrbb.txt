@@ -9,3 +9,6 @@ dev
 
 Video by Magda Ehlers from Pexels
 video
+
+https://github.com/robertohuertasm
+Angular React y Sass Ico

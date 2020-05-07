@@ -105,60 +105,6 @@
     transition-timing-function: ease;
 }
 
-/* .skills {
-    text-align: center;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5em;
-    color: #f2f6f5;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    background: #0e8ca8;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
-    transition-delay: 1s;
-    transform: translateY(100%);
-}
-.skills h3 {
-    display: block;
-    margin-bottom: 0.2em;
-    padding: 0;
-}
-.skills.skillsDev h3 {
-    font-size: 1em;
-    display: block;
-    margin-bottom: 0.2em;
-    padding: 0;
-}
-.skills.skillsOther h3 {
-    font-size: 1em;
-    display: inline-block;
-    padding: 0;
-}
-
-.skills.skillsFrontEnd {
-    text-shadow: -2px 2px 2px #63707e;
-}
-.skills.skillDev {
-    text-shadow: 0px 1px 2px #63707e;
-}
-.skills.skillsBackEnd {
-    text-shadow: 2px 2px 2px #63707e;
-}
-.skills.skillsOther {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-shadow: 0px 2px 2px #63707e;
-}
- */
 .area {
     cursor: pointer;
     height: 100%;
@@ -168,7 +114,6 @@
     align-content: center;
 }
 .area__img {
-/*     margin-top: 1.5 em; */
     margin: 0;
     margin-bottom: 2em;
     opacity: 1;
@@ -235,6 +180,3 @@
 .effect-selector:hover {
     opacity: 1;
 }
-/* .effect-selector:hover .skills{
-    transform: translateY(0%);
-} */
