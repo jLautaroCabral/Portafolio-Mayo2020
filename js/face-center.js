@@ -113,7 +113,7 @@ $.ajax('https://randomuser.me/api/sdfdsfdsfs', {
   }
   const BASE_API = 'https://yts.am/api/v2/';
 
-  function featuringTemplate(peli) {
+  function countryTemplate(country) {
     return (
       `
       <div class="featuring">

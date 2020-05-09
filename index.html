@@ -168,10 +168,25 @@
                                 <article class="examples__item">
                                     <div class="item__info">
                                         <h2>Integración con APIs</h2>
-                                        <p>Gracias a JavaScript puedo obtener e integrar a mi proyecto la información que provee una API. En este ejemplo obtengo información sobre el COVID-19 a través de la <a href="https://rapidapi.com/Gramzivi/api/covid-19-data/details" target="_blank">siguiente API</a>.</p>
+                                        <p>Gracias a JavaScript puedo obtener e integrar a mi proyecto la información que provee una API. En este ejemplo obtengo información sobre países afectados por el COVID-19 a través de la <a href="https://covid19-api.com/" target="_blank">siguiente API</a>.</p>
                                     </div>
-                                    <div class="item__example">
-                                        
+                                    <div class="item__panel-api" id="item__panel-api">
+                                        <div class="panelApi__table">
+                                            <table style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>País</th>
+                                                        <th>Último cambio</th>
+                                                        <th>Última actualización</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tbody-countriesTable">
+                                                </tbody>
+                                              </table>
+                                        </div>
+                                        <div class="panelApi__tableInfo" id="tableInfo-countrySelected">
+                                            <p>Seleccione un país para obtener su información.</p>
+                                        </div>
                                     </div>
                                 </article>
 
@@ -211,7 +226,7 @@
                                             <h3>React</h3>
                                         </div>
                                     </div>
-                                    <p>Pueden conocer todas mis certificaciones <a href="https://platzi.com/@lautaro-cabral/" target="_blank">aquí</a>.</p>
+                                    <p>Puedes conocer todas mis certificaciones <a href="https://platzi.com/@lautaro-cabral/" target="_blank">aquí</a>.</p>
                                 </article>
                                 <article class="knowledge__learning">
                                     <h2>¿Qué estoy aprendiendo?</h2>
@@ -281,7 +296,7 @@
         </video>
     </div>
     <script src="js/movement.js"></script>
-<!--     <script src="js/face-center.js"></script> -->
-    <script src="js/face-left.js"></script>
+    <script src="js/face-left-animations.js"></script>
+    <script src="js/face-left-apiconnection.js"></script>
 </body>
 </html>

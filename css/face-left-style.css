@@ -344,24 +344,151 @@
 }
 /*----------------------- CSS Grid Examples END*/
 
-/*----------------------- API Examples START*/
+/*----------------------- API Example START*/
 .examples__item:last-child {
     flex-direction: column;
 }
 .examples__item:last-child .item__info {
     width: initial;
 }
-/* .item__info h2 {
+.item__info h2 {
     margin-bottom: 0.3em;
 }
-.item__example {
-    width: 40%;
+.item__panel-api {
+    margin-top: 0.5em;
+    border-radius: 1em;
+    height: 100%;
+    background-color: #020202a2;
+    overflow: hidden;
+    display: flex;
+    /* width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-} */
-/*----------------------- API Examples END*/
+    justify-content: space-around; */
+}
+.panelApi__table {
+    overflow: auto;
+    height: 100%;
+    width: 70%;
+    text-align: start;
+}
+
+.panelApi__table::-webkit-scrollbar {
+    width: 1em;
+}
+.panelApi__table::-moz-scrollbar {
+    width: 1em;
+}
+.panelApi__table::-ms-scrollbar {
+    width: 1em;
+}
+.panelApi__table::-o-scrollbar {
+    width: 1em;
+}
+
+.panelApi__table::-webkit-scrollbar-thumb {
+    background-color: #273b47a2;
+    border-radius: 0.5em;
+}
+.panelApi__table::-webkit-scrollbar-thumb:hover,
+.panelApi__table::-webkit-scrollbar-thumb:active {
+    background-color: #1c272ea2;
+}
+.panelApi__table::-moz-scrollbar-thumb:hover,
+.panelApi__table::-moz-scrollbar-thumb:active {
+    background-color: #1c272ea2;
+}
+.panelApi__table::-ms-scrollbar-thumb:hover,
+.panelApi__table::-ms-scrollbar-thumb:active {
+    background-color: #1c272ea2;
+}
+.panelApi__table::-o-scrollbar-thumb:hover,
+.panelApi__table::-o-scrollbar-thumb:active {
+    background-color: #1c272ea2;
+}
+
+.panelApi__table::-webkit-scrollbar-track {
+    background-color: #00000077;
+}
+.panelApi__table::-moz-scrollbar-track {
+    background-color: #00000077;
+}
+.panelApi__table::-ms-scrollbar-track {
+    background-color: #00000077;
+}
+.panelApi__table::-o-scrollbar-track {
+    background-color: #00000077;
+}
+
+.panelApi__table table {
+    border-collapse: collapse;
+    border-spacing: none;
+}
+
+.panelApi__table table thead tr th{
+    text-align: left;
+    font-size: 0.9em;
+    padding: 0.8em;
+    padding-left: 0.5em;
+}
+.panelApi__table table tbody tr:nth-child(even) {
+    background: #85858536;
+}
+.panelApi__table table tbody tr td {
+    padding: 0.5em;
+    font-size: 0.9em;
+}
+.panelApi__table table tbody tr:hover {
+    cursor: pointer;
+    color: #00a8cc;
+}
+.panelApi__table table tbody tr:active {
+    opacity: 0.7;
+}
+
+.panelApi__tableInfo {
+    box-sizing:border-box;
+    display: flex;
+    padding: 0.5em;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    /* align-content: space-between; */
+    text-align: center;
+    flex-direction: column;
+}
+.tableInfo__container {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.tableInfo__container p{
+    display: inline-block;
+    font-size: 0.85em;
+}
+.ico-api {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 0.4em;
+}
+.ico-api-yellow {
+    background-color: yellow;
+}
+.ico-api-green {
+    background-color: green;
+}
+.ico-api-red {
+    background-color: red;
+}
+.ico-api-grey {
+    background-color: gray;
+}
+
+/*----------------------- API Example END*/
 .knowledge {
     color: #273b47;
     font-size: 1.4em;
