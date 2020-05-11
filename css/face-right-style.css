@@ -1,0 +1,93 @@
+.right-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.backend-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.knowledge-backend {
+    height: 100%;
+    width: 50%;
+    color: #273b47;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.knowledge-backend article {
+    font-weight: 600;
+    text-align: center;
+    padding: 1em;
+    border-radius: 1em;
+    border-bottom: #93b5b3 2px solid;
+    background-color: #f2f6f5b2;
+    font-size: 0.7em;
+    width: 80%;
+}
+.knowledge-backend  h1 {
+    font-size: 1.9em;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+}
+.knowledge-backend  a {
+    color: #273b47;
+}
+
+.example-backend {
+
+    height: 100%;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.example-backend div {
+    height: 48%;
+    width: 95%;
+    box-shadow: inset 0px 0px 37px -3px rgba(0,0,0,0.5);
+}
+.panel-form {
+
+}
+.panel-api {
+    
+}
+
+.btn-rightToCenter {
+    cursor: pointer;
+    box-shadow: inset 0px 0px 37px -3px rgba(0,0,0,0.5);
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    opacity: 0.6;
+    transition-duration: 1s;
+}
+
+.leftArrow {
+    background-image: url('../imgs/left-and-right-arrows.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scaleX(-1);
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
+}
+
+.btn-rightToCenter:hover {
+    opacity: 1;
+}
