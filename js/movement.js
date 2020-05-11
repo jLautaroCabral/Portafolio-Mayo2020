@@ -83,10 +83,16 @@ const $devButton = document.getElementById('devButton');
 const $othersButton = document.getElementById('othersButton');
 
 const $leftToCenterButton = document.getElementById('leftToCenterButton');
+const $downToCenterButton = document.getElementById('downToCenterButton');
+const $upToCenterButton = document.getElementById('upToCenterButton');
+const $rightToCenterButton = document.getElementById('rightToCenterButton');
         
 $backEndButton.addEventListener('click', () => centerTo('translateX(-100%)'));
 $frontEndButton.addEventListener('click', () => centerTo('translateX(100%)'));
 $devButton.addEventListener('click', () => centerTo('translateY(100%)'));
 $othersButton.addEventListener('click', () => centerTo('translateY(-100%)'));
 
-$leftToCenterButton.addEventListener('click', () => fromToCenter('translateX(100%)'))
+$leftToCenterButton.addEventListener('click', () => fromToCenter('translateX(100%)'));
+$downToCenterButton.addEventListener('click', () => fromToCenter('translateY(-100%)'));
+$upToCenterButton.addEventListener('click', () => fromToCenter('translateY(100%)'));
+$rightToCenterButton.addEventListener('click', () => fromToCenter('translateX(-100%)'));

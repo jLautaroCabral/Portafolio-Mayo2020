@@ -1,0 +1,134 @@
+.grid-container--faceup {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    grid-template: 10% 1fr / 1fr 1fr;
+    grid-template-areas: "b b"
+                         "c j";
+    box-sizing: border-box;
+}
+
+.dev-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.dev-knowledge {
+    display: flex;
+    height: 90%;
+    margin-bottom: 1.5em;
+}
+
+.skills {
+    height: 100%;
+    width: 55%;
+    display: grid;
+    grid-template: repeat(5, 1fr) / 1fr 2fr 1fr;
+    /* grid-gap: 1em; */
+}
+.skill {
+    display: flex;
+    box-shadow: inset 0px 0px 37px -3px rgba(0, 0, 0, 0.5);
+}
+.skill--left {
+    grid-column: 1 / 3;
+}
+.skill--right {
+    grid-column: 2 / 4;
+}
+.skill__img-container {
+    background-color: #FEFEFE;
+    padding: 0.5em;
+    box-sizing: border-box;
+    position: relative;
+    z-index: -1;
+}
+.skill__img {
+    width: 12em;
+    height: 12em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.git {
+    background-image: url(../imgs/git.png);
+    background-size: cover;
+}
+.arq {
+    background-image: url(../imgs/arquitecturas-de-software.png);
+}
+.uml {
+    background-image: url(../imgs/uml.png);
+}
+.postman {
+    background-image: url(../imgs/postman.png);
+}
+.regex {
+    background-image: url(../imgs/regex.jpg);
+}
+
+.learning-dev {
+    width: 45%;
+    color: #273b47;
+    font-size: 1.4em;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3em;
+}
+
+.learning-dev article {
+    font-weight: 600;
+    text-align: center;
+    padding: 1em;
+    border-radius: 1em;
+    border-bottom: #93b5b3 2px solid;
+    background-color: #f2f6f5b2;
+    background-position-y: bottom;
+}
+
+.learning-dev a {
+    color: #273b47;
+}
+
+.btn-upToCenter {
+    opacity: 0.6;
+    transition-duration: 1s;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 37px -3px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    height: 10%;
+}
+
+.btn-upToCenter h2 {
+    margin-top: 1em;
+}
+
+.downArrow {
+    background-image: url('../imgs/left-and-right-arrows.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-top: 0.5em;
+    transform: rotate(90deg);
+}
+
+.btn-upToCenter:hover {
+    opacity: 1;
+}
