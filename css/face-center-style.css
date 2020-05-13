@@ -1,41 +1,23 @@
-/* * {
-    border: red 1px solid;
-}
- */
+/***************************** HERO */
 .hero {
-    font-size: 26px;
+    font-size: 18px;
     margin: auto;
-    margin-top: 1.2em;
+    margin-top: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.hero__info, .hero__img {
-    width: 25%;
-}
-
-.hero__img {
-    margin-left: auto;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 250px;
-    height: 250px;
-    background-position: center;
-    margin-left: 2em;
-    margin-right: 2em;
-    border: #c8dad3 2.5px solid;
-    box-shadow: inset 1px -1px 2px 8px #f6f5f5;
-}
-
 .hero__info {
+    font-size: 1em;
     text-align: center;
     padding: 0.2em;
     border-radius: 3%;
     border-bottom: #93b5b3 2px solid;
     box-shadow: 0px 43px 96px -92px rgba(0,0,0,0.7);
 }
-
+.hero__info, .hero__img {
+    width: 25%;
+}
 .hero__info--main {
     margin-left: 2em;
     margin-right: 2em;
@@ -43,19 +25,36 @@
     padding: 0.2em;
     color: #f2f6f5;
 }
-
+.hero__img {
+    margin-left: auto;
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border: #c8dad3 2.5px solid;
+    background-image: url(../imgs/lautaro-cabral.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero__info--name {
+    margin-top: 0.5em;
+}
 .hero__info--name h2{
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .hero__info--title {
-    font-size: 35px;
+    font-size: 1.5em;
     margin-bottom: 0.5em;
 }
 .hero__info--p {
     margin-bottom: 0.5em;
 }
 
+
+/***************************** NAVIGATION */
 .navigation {
     padding: 0.5em;
     height: 60%;
@@ -68,7 +67,6 @@
 }
 
 .column {
-    overflow: hidden;
     position: relative;
     will-change: transform;
     transform-style: preserve-3d;
@@ -77,19 +75,13 @@
     transform: rotate3d(0,1,0, 35deg) translate3d(0, 0, -100px);
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
-    /* border: rgba(242, 246, 245, 0.322) 0.2px solid; */
-    /* border: rgba(242, 246, 245, 0.4) 2px solid;
-    border-radius: 5%; */
      
     color: #f6f5f5;
     box-shadow: inset 0px 0px 37px -3px rgba(0,0,0,0.35);
     
     text-shadow: 0px 4px 0.8px #63707e;
     font-family: 'Francois One', sans-serif;
-    /* font-family: 'Basic', sans-serif; */
     font-family: 'Inder', sans-serif;
-    /* font-family: 'Mandali', sans-serif; */
-    /* filter: hue-rotate(); */
 }
 
 .effect-selector {
@@ -117,8 +109,8 @@
     margin: 0;
     margin-bottom: 2em;
     opacity: 1;
-    width: 300px;
-    height: 300px;
+    width: 14em;
+    height: 14em;
     background-color: white;
     background-size: 65%;
     background-repeat: no-repeat;
@@ -126,7 +118,7 @@
     border-radius: 50%;
 }
 .area__title {
-    font-size: 68px;
+    font-size: 3.7em;
     text-align: center;
     width: 100%;
     margin: 0;

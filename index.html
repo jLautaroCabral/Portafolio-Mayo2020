@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/face-center-style.css">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/face-bottom-style.css">
     <link rel="stylesheet" href="css/face-up-style.css">
     <link rel="stylesheet" href="css/face-right-style.css">
-</head>
+    <link rel="stylesheet" href="css/responsive-desing.css">
 </head>
 <body>
     <div class="view">
@@ -20,42 +20,31 @@
                 <div class="face center">
                     <div class="screen-body">
 
-                        <!-- <div class="button">aaaa</div> -->
-
+                        <!-------------------------------------- HERO -->
                         <section class="hero">
                             <div class="hero__info">
                                 <h1 class="hero__info--title">Sobre mí</h1>
                                 <p class="hero__info--p">El estudiante eterno. Soy un entusiasta de el desarrollo de software y el lifelong learning, busco formarme de mucha experiencia y trabajar en equipos ágiles.</p>
                             </div>
                             <div class="hero__info--main">
-                                <div class="hero__img">
-                                    <img src="imgs/lautaro-cabral.jpg" width="255px" height="255px" alt="">
-                                </div>
+                                <div class="hero__img"></div>
                                 <div class="hero__info--name">
                                     <h1>Lautaro Cabral</h1><h2>Desarrollador Web</h2>
                                 </div>
                             </div>
                             <div class="hero__info">
                                 <h1 class="hero__info--title">Sobre mi portafolio</h1>
-                                <p class="hero__info--p">Cada conocimiento que listo, está dentro y en el desarrollo del portafolio, traté de que el mismo sea amigable e interactivo tanto para un reclutador como para un técnico</p>
+                                <p class="hero__info--p">Cada conocimiento que listo, está dentro y en el desarrollo del portafolio, traté de que el mismo sea amigable e interactivo tanto para un reclutador</p>
                             </div>
                         </section>
 
+                        <!-------------------------------------- NAVIGATION -->
                         <nav class="navigation">
-
                             <div class="column column__left" id="frontEndButton">
                                 <div class="area">
                                     <div class="area__img frontend"></div>
                                     <div class="area__title">Front End</div>
                                     <div class="effect-selector"></div>
-                                    <!-- <div class="skills skillsFrontEnd">
-                                        <h3>HTML5</h3>
-                                        <h3>CSS</h3>
-                                        <h3>JavaScript</h3>
-                                        <h3>Responsive Design</h3>
-                                        <h3>Bootstrap</h3>
-                                        <h3>Integración con APIs</h3>
-                                    </div> -->
                                 </div>
                             </div>
 
@@ -64,15 +53,6 @@
                                     <div class="area__img dev"></div>
                                     <div class="area__title">Desarrollo</div>
                                     <div class="effect-selector"></div>
-                                    <!-- <div class="skills skillsDev">
-                                        <h3>Git</h3>
-                                        <h3>SCRUM</h3>
-                                        <h3>Arquitecturas de software</h3>
-                                        <h3>RegEx</h3>
-                                        <h3>UML</h3>
-                                        <h3>Postman</h3>
-                                        <h3>Linux / Windows</h3>
-                                    </div> -->
                                 </div>
                             </div>
 
@@ -81,30 +61,18 @@
                                     <div class="area__img backend"></div>
                                     <div class="area__title">Back End</div>
                                     <div class="effect-selector"></div>
-                                    <!-- <div class="skills skillsBackEnd">
-                                        <h3>PHP</h3>
-                                        <h3>Laravel</h3>
-                                        <h3>SQL</h3>
-                                        <h3>MySQL</h3>
-                                        <h3>Desarrollo de APIs REST</h3>
-                                    </div> -->
                                 </div>
                             </div>
                             <div class="column column__bottom" id="othersButton">
                                 <div class="area">
                                     <div class="area__title">Otros</div>
                                     <div class="effect-selector"></div>
-                                    <!-- <div class="skills skillsOther">
-                                        <h3>C#</h3>
-                                        <h3>Java</h3>
-                                        <h3>Seguridad</h3>
-                                    </div> -->
                                 </div>
                             </div>
                         </nav>
                     </div>
                 </div>
-
+                <!--------------------------------------------------- FACE LEFT  -->
                 <div class="face left">
                     <div class="screen-body">
                         <div class="flex-container">
@@ -213,19 +181,19 @@
                                     <div class="lastcourses">
                                         <div class="lastcourses__item">
                                             <div class="ico-knowledge">
-                                                <img src="imgs/file_type_reactjs_icon_130205.png" width="70px" height="70px" alt="">
+                                                <div class="icon icon-react"></div>
                                             </div>
                                             <h3>React</h3>
                                         </div>
                                         <div class="lastcourses__item">
                                             <div class="ico-knowledge">
-                                                <img src="imgs/file_type_reactjs_icon_130205.png" width="70px" height="70px" alt="">
+                                                <div class="icon icon-react"></div>
                                             </div>
                                             <h3>React</h3>
                                         </div>
                                         <div class="lastcourses__item">
                                             <div class="ico-knowledge">
-                                                <img src="imgs/file_type_reactjs_icon_130205.png" width="70px" height="70px" alt="">
+                                                <div class="icon icon-react"></div>
                                             </div>
                                             <h3>React</h3>
                                         </div>
@@ -238,19 +206,19 @@
                                     <div class="learning">
                                         <div class="learning__item">
                                             <div class="ico-knowledge">
-                                                <img src="imgs/file_type_reactjs_icon_130205.png" width="70px" height="70px" alt="">
+                                                <div class="icon icon-react"></div>
                                             </div>
                                             <h3>React</h3>
                                         </div>
                                         <div class="learning__item">
                                             <div class="ico-knowledge">
-                                                <img src="imgs/file_type_angular_icon_130754.png" width="70px" height="70px" alt="">
+                                                <div class="icon icon-angular"></div>
                                             </div>
                                             <h3>Angular</h3>
                                         </div>
                                         <div class="learning__item">
                                             <div class="ico-knowledge">
-                                                <img src="imgs/file_type_sass_icon_130182.png" width="70px" height="70px" alt="">
+                                                <div class="icon icon-sass"></div>
                                             </div>
                                             <h3>Preprocesadores</h3>
                                         </div>
@@ -269,107 +237,123 @@
                 <!--------------------------------------------------- FACE UP  -->
                 <div class="face up">
                     <div class="screen-body">
+
                         <div class="dev-container">
+
                             <div class="dev-knowledge">
-                                <div class="skills">
-                                    <div class="skill skill--left">
+
+                                <section class="skills">
+
+                                    <article class="skill skill--left">
                                         <div class="skill__img-container">
                                             <div class="skill__img git"></div>
                                         </div>
                                         <div class="skill__info">
                                                 <h2>Git y GitHub</h2>
-                                                <p>Git me permite Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, inventore.</p>
+                                                <p>Con Git y GitHub puedo versionar mis proyectos eficientemente, experimentar con el código sin correr riesgos, mostrar mis conocimientos y sobre todo trabajar en equipo.</p>
                                         </div> 
-                                    </div>
-                                    <div class="skill skill--right">
+                                    </article>
+
+                                    <article class="skill skill--right">
                                         <div class="skill__img-container">
                                             <div class="skill__img arq"></div>
                                         </div>
                                         <div class="skill__info">
                                             <h2>Arquitecturas de software</h2>
-                                            <p>Git me permite Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, inventore.</p>
+                                            <p>Con conocimienos en fundamentos y patrones de arquitectura de software puedo desarrollar software eficiente, mantenible y escalable.</p>
                                         </div>  
-                                    </div>
-                                    <div class="skill skill--left">
+                                    </article>
+
+                                    <article class="skill skill--left">
                                         <div class="skill__img-container">
                                             <div class="skill__img uml"></div>
                                         </div>
                                         <div class="skill__info">
                                             <h2>UML</h2>
-                                            <p>Git me permite Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, inventore.</p>
+                                            <p>Mediante UML es posible establecer requerimientos y estructuras necesarias para plasmar un sistema de software antes de llegar al proceso de escribir código.</p>
                                         </div>  
-                                    </div>
-                                    <div class="skill skill--right">
+                                    </article>
+
+                                    <article class="skill skill--right">
                                         <div class="skill__img-container">
                                             <div class="skill__img postman"></div>
                                         </div>
                                         <div class="skill__info">
                                             <h2>Postman</h2>
-                                            <p>Git me permite Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, inventore.</p>
+                                            <p>Gracias a Postman además de testear, consumir y depurar API REST, puedo escribir pruebas automatizadas para ellas y documentarlas muy fácilmente.
+                                            </p>
                                         </div>  
-                                    </div>
-                                    <div class="skill skill--left">
+                                    </article>
+
+                                    <article class="skill skill--left">
                                         <div class="skill__img-container">
                                             <div class="skill__img regex"></div>
                                         </div>
                                         <div class="skill__info">
                                             <h2>RegEx</h2>
-                                            <p>Git me permite Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, inventore.</p>
+                                            <p>Las Expresiones Regulares me permiten procesar en segundos grandes cantidades de texto para buscar patrones de caracteres específicos con el fin validar, reemplazar o reformatear un texto.</p>
                                         </div>  
-                                    </div>
-                                </div>
-                                <div class="learning-dev">
+                                    </article>
+
+                                </section>
+
+
+                                <section class="learning-dev">
+
                                     <article class="knowledge__lastcourses">
                                         <h2>Mis ultimas 3 certificaciones en Front End</h2>
                                         
                                         <div class="lastcourses">
                                             <div class="lastcourses__item">
                                                 <div class="ico-knowledge">
-                                                    <img src="imgs/file_type_reactjs_icon_130205.png" width="70px" height="70px" alt="">
+                                                    <div class="icon icon-react"></div>
                                                 </div>
                                                 <h3>React</h3>
                                             </div>
                                             <div class="lastcourses__item">
                                                 <div class="ico-knowledge">
-                                                    <img src="imgs/file_type_reactjs_icon_130205.png" width="70px" height="70px" alt="">
+                                                    <div class="icon icon-react"></div>
                                                 </div>
                                                 <h3>React</h3>
                                             </div>
                                             <div class="lastcourses__item">
                                                 <div class="ico-knowledge">
-                                                    <img src="imgs/file_type_reactjs_icon_130205.png" width="70px" height="70px" alt="">
+                                                    <div class="icon icon-react"></div>
                                                 </div>
                                                 <h3>React</h3>
                                             </div>
                                         </div>
                                         <p>Puedes conocer todas mis certificaciones <a href="https://platzi.com/@lautaro-cabral/" target="_blank">aquí</a>.</p>
                                     </article>
+                                    
                                     <article class="knowledge__learning">
                                         <h2>¿Qué estoy aprendiendo?</h2>
                                         <p>Ya que nunca paro de aprender, quizás cuando veas mi portafolio ya tenga conocimientos en los siguienes temas:</p>
                                         <div class="learning">
                                             <div class="learning__item">
                                                 <div class="ico-knowledge">
-                                                    <img src="imgs/file_type_reactjs_icon_130205.png" width="70px" height="70px" alt="">
+                                                    <div class="icon icon-react"></div>
                                                 </div>
                                                 <h3>React</h3>
                                             </div>
                                             <div class="learning__item">
                                                 <div class="ico-knowledge">
-                                                    <img src="imgs/file_type_angular_icon_130754.png" width="70px" height="70px" alt="">
+                                                    <div class="icon icon-angular"></div>
                                                 </div>
                                                 <h3>Angular</h3>
                                             </div>
                                             <div class="learning__item">
                                                 <div class="ico-knowledge">
-                                                    <img src="imgs/file_type_sass_icon_130182.png" width="70px" height="70px" alt="">
+                                                    <div class="icon icon-sass"></div>
                                                 </div>
                                                 <h3>Preprocesadores</h3>
                                             </div>
                                         </div>
                                     </article>
-                                </div>
+
+                                </section>
                             </div>
+
                             <div class="btn-upToCenter">
                                 <div class="effect-selector" id="upToCenterButton"></div>
                                 <h2>Volver al Home</h2>
@@ -382,12 +366,14 @@
                 <div class="face down">
                     <div class="screen-body">
                         <div class="grid-container--facedown">
+
                             <div class="btn-downToCenter" id="downToCenterButton">
                                 <div class="effect-selector"></div>
                                 <div class="upArrow"></div>
                                 <h2>Volver al Home</h2>
                             </div>
-                            <div class="other other-csharp">
+                            
+                            <section class="other other-csharp">
                                 <div class="other__title"><h1>C#</h1></div>
                                 <div class="other__info">
                                     <div class="info__header">
@@ -411,8 +397,9 @@
                                         <p>Por ahora carezco de conocimientos en .NET para asegurar que puedo hacer back end con C#</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="other other-java">
+                            </section>
+
+                            <section class="other other-java">
                                 <div class="other__title"><h1>Java</h1></div>
                                 <div class="other__info">
                                     <div class="info__header">
@@ -427,7 +414,7 @@
                                         <p>Por ahora carezco de conocimientos en Hibernate y Spring para asegurar que puedo hacer back end con Java</p>
                                     </div>
                                 </div>
-                            </div>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -435,6 +422,7 @@
                 <div class="face right">
                     <div class="screen-body">
                         <div class="right-container">
+
                             <div class="btn-rightToCenter" id="rightToCenterButton">
                                 <div class="effect-selector"></div>
                                 <div class="leftArrow"></div>
@@ -442,7 +430,9 @@
                             </div>
 
                             <div class="backend-container">
+
                                     <section class="knowledge-backend">
+
                                         <article class="knowledge__list">
                                             <h1>Conocimientos:</h1>
                                             <ul>
@@ -453,64 +443,70 @@
                                                 <li><h2>Desarrollo de APIs REST</h2></li>
                                             </ul>
                                         </article>
+
                                         <article class="knowledge__lastcourses">
                                             <h2>Mis ultimas 3 certificaciones en Front End</h2>
                                             
                                             <div class="lastcourses">
                                                 <div class="lastcourses__item">
                                                     <div class="ico-knowledge">
-                                                        <img src="imgs/file_type_reactjs_icon_130205.png" width="70px" height="70px" alt="">
+                                                        <div class="icon icon-react"></div>
                                                     </div>
                                                     <h3>React</h3>
                                                 </div>
                                                 <div class="lastcourses__item">
                                                     <div class="ico-knowledge">
-                                                        <img src="imgs/file_type_reactjs_icon_130205.png" width="70px" height="70px" alt="">
+                                                        <div class="icon icon-react"></div>
                                                     </div>
                                                     <h3>React</h3>
                                                 </div>
                                                 <div class="lastcourses__item">
                                                     <div class="ico-knowledge">
-                                                        <img src="imgs/file_type_reactjs_icon_130205.png" width="70px" height="70px" alt="">
+                                                        <div class="icon icon-react"></div>
                                                     </div>
                                                     <h3>React</h3>
                                                 </div>
                                             </div>
                                             <p>Puedes conocer todas mis certificaciones <a href="https://platzi.com/@lautaro-cabral/" target="_blank">aquí</a>.</p>
                                         </article>
+
                                         <article class="knowledge__learning">
                                             <h2>¿Qué estoy aprendiendo?</h2>
                                             <p>Ya que nunca paro de aprender, quizás cuando veas mi portafolio ya tenga conocimientos en los siguienes temas:</p>
                                             <div class="learning">
                                                 <div class="learning__item">
                                                     <div class="ico-knowledge">
-                                                        <img src="imgs/file_type_reactjs_icon_130205.png" width="70px" height="70px" alt="">
+                                                        <div class="icon icon-react"></div>
                                                     </div>
                                                     <h3>React</h3>
                                                 </div>
                                                 <div class="learning__item">
                                                     <div class="ico-knowledge">
-                                                        <img src="imgs/file_type_angular_icon_130754.png" width="70px" height="70px" alt="">
+                                                        <div class="icon icon-angular"></div>
                                                     </div>
                                                     <h3>Angular</h3>
                                                 </div>
                                                 <div class="learning__item">
                                                     <div class="ico-knowledge">
-                                                        <img src="imgs/file_type_sass_icon_130182.png" width="70px" height="70px" alt="">
+                                                        <div class="icon icon-sass"></div>
                                                     </div>
                                                     <h3>Preprocesadores</h3>
                                                 </div>
                                             </div>
                                         </article>
                                     </section>
+
                                 <div class="example-backend">
+
                                     <div class="panel-form">
                                         <h2>Panel Form en desarrollo</h2>
                                     </div>
                                     <div class="panel-api">
                                         <h2>Panel API en desarrollo</h2>
                                     </div>
+
                                 </div>
+
                             </div>
                             
                         </div>

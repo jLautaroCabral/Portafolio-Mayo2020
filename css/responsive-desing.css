@@ -1,0 +1,232 @@
+@media screen
+and (max-width: 1920px)
+and (max-height: 1080px){
+    .face.center {
+        background-color: red;
+    }
+}
+
+@media screen
+and (max-width: 1680px)
+and (max-height: 1200px){
+    /* Face Center */
+    .face.center {
+        background-color: rgb(52, 52, 255);
+    }
+    /* Face Up */
+    .dev-container {
+        font-size: 0.78em;
+    }
+    /* Face Left and Up*/
+    .examples {
+        font-size: 1.1em;
+    }
+    .knowledge {
+        font-size: 0.9em;
+    }
+    /* Face Right */
+    .knowledge-backend {
+        font-size: 1.9em;
+    }
+    /* Face Down */
+    .grid-container--facedown {
+        font-size: 0.7em;
+    }
+}
+
+@media screen
+and (max-width: 1680px)
+and (max-height: 1050px){
+    /* Face Center */
+    .face.center {
+        background-color: green;
+    }
+    .column.column__bottom {
+        margin-top: 2.2em;
+    }
+}
+
+@media screen
+and (max-width: 1440px)
+and (max-height: 960px){
+    .face.center {
+        background-color: yellow;
+    }
+    .hero__info {
+        font-size: 0.95em;
+    }
+    .hero__img {
+        width: 9em;
+        height: 9em;
+    }
+    .area__img {
+        width: 11em;
+        height: 11em;
+    }
+    .area__title {
+        font-size: 3.1em;
+    }
+    /* Face Up */
+    .dev-container {
+        font-size: 0.65em;
+    }
+    .column.column__bottom {
+        margin-top: 3.5em;
+    }
+    /* Face Left*/
+    .examples {
+        font-size: 0.9em;
+    }
+    .knowledge {
+        font-size: 0.85em;
+    }
+    /* Face Right */
+    .knowledge-backend {
+        font-size: 1.6em;
+    }
+    /* Face Down */
+    .grid-container--facedown {
+        font-size: 0.6em;
+    }
+}
+
+@media screen
+and (max-width: 1440px)
+and (max-height: 900px){
+    .face.center {
+        background-color: tomato;
+    }
+    .hero__info {
+        font-size: 0.85em;
+    }
+    .hero__img {
+        width: 8em;
+        height: 8em;
+    }
+    .hero__info--name h2{
+        font-size: 1.1em;
+    }
+}
+
+@media screen
+and (max-width: 1400px)
+and (max-height: 1050px){
+    .face.center {
+        background-color: turquoise;
+    }
+}
+
+@media screen
+and (max-width: 1366px)
+and (max-height: 768px){
+    .face.center {
+        background-color: violet;
+    }
+    /* Face Up */
+    .dev-container {
+        font-size: 0.6em;
+    }
+    /* Face Left and Up*/
+    .examples {
+        font-size: 0.9em;
+    }
+    .knowledge {
+        font-size: 0.8em;
+    }
+    /* Face Right */
+    .knowledge-backend {
+        font-size: 1.7em;
+    }
+    /* Face Down */
+    .grid-container--facedown {
+        font-size: 0.55em;
+    }
+}
+
+@media screen
+and (max-width: 1280px)
+and (max-height: 1024px){
+    .face.center {
+        background-color: yellowgreen;
+    }
+}
+
+@media screen
+and (max-width: 1280px)
+and (max-height: 960px){
+    .face.center {
+        background-color: crimson;
+    }
+}
+
+@media screen
+and (max-width: 1280px)
+and (max-height: 854px){
+    .face.center {
+        background-color: darkgoldenrod;
+    }
+}
+
+@media screen
+and (max-width: 1280px)
+and (max-height: 800px){
+    .face.center {
+        background-color: floralwhite;
+    }
+}
+
+@media screen
+and (max-width: 1280px)
+and (max-height: 768px){
+    .face.center {
+        background-color: darkmagenta;
+    }
+}
+
+@media screen
+and (max-width: 1280px)
+and (max-height: 720px){
+    .face.center {
+        background-color: darkslategrey;
+    }
+}
+
+@media screen
+and (max-width: 1115px)
+and (max-height: 768px){
+    .face.center {
+        background-color: grey;
+    }
+}
+
+@media screen
+and (max-width: 1024px)
+and (max-height: 768px){
+    .face.center {
+        background-color: indigo;
+    }
+}
+
+@media screen
+and (max-width: 1024px)
+and (max-height: 600px){
+    .face.center {
+        background-color: olivedrab;
+    }
+}
+
+@media screen
+and (max-width: 854px)
+and (max-height: 480px){
+    .face.center {
+        background-color: orangered;
+    }
+}
+
+@media screen
+and (max-width: 800px)
+and (max-height: 600px){
+    .face.center {
+        background-color: peru;
+    }
+}
