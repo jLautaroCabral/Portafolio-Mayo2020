@@ -12,3 +12,6 @@ video
 
 https://github.com/robertohuertasm
 Angular React y Sass Ico
+
+https://www.flaticon.com/authors/freepik
+Responsive Design

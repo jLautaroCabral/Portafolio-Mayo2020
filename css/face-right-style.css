@@ -43,6 +43,26 @@
     color: #273b47;
 }
 
+.icon-php {
+    background-image: url(../imgs/php.png);
+}
+.icon-database {
+    background-image: url(../imgs/database.png);
+}
+.icon-apirest {
+    background-image: url(../imgs/apirest.png);
+}
+.icon-java {
+    background-image: url(../imgs/java.png);
+}
+.icon-nodejs {
+    background-image: url(../imgs/nodejs.png);
+}
+.icon-graphql {
+    background-image: url(../imgs/graphql.png);
+}
+
+
 .example-backend {
 
     height: 100%;
@@ -76,6 +96,7 @@
     position: relative;
     opacity: 0.6;
     transition-duration: 1s;
+    font-size: 0.5em;
 }
 
 .leftArrow {
@@ -84,8 +105,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     transform: scaleX(-1);
-    width: 100px;
-    height: 100px;
+    width: 3.2em;
+    height: 3.2em;
     margin-bottom: 1em;
 }
 

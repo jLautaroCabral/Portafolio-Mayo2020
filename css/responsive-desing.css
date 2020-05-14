@@ -1,18 +1,24 @@
 @media screen
 and (max-width: 1920px)
 and (max-height: 1080px){
-    .face.center {
+    /* .face.center {
         background-color: red;
+    } */
+    #video {
+        height: initial;   
     }
 }
 
 @media screen
 and (max-width: 1680px)
 and (max-height: 1200px){
-    /* Face Center */
-    .face.center {
-        background-color: rgb(52, 52, 255);
+    #video {
+        height: 100%;   
     }
+    /* Face Center */
+    /* .face.center {
+        background-color: rgb(52, 52, 255);
+    } */
     /* Face Up */
     .dev-container {
         font-size: 0.78em;
@@ -38,20 +44,24 @@ and (max-height: 1200px){
 and (max-width: 1680px)
 and (max-height: 1050px){
     /* Face Center */
-    .face.center {
+    /* .face.center {
         background-color: green;
-    }
+    } */
     .column.column__bottom {
-        margin-top: 2.2em;
+        margin-top: 2.3em;
     }
 }
 
 @media screen
 and (max-width: 1440px)
 and (max-height: 960px){
-    .face.center {
-        background-color: yellow;
+    #video {
+        /* height: 100%;
+        width: 100%; */   
     }
+    /* .face.center {
+        background-color: yellow;
+    } */
     .hero__info {
         font-size: 0.95em;
     }
@@ -66,12 +76,12 @@ and (max-height: 960px){
     .area__title {
         font-size: 3.1em;
     }
+    .column.column__bottom {
+        margin-top: 3.8em;
+    }
     /* Face Up */
     .dev-container {
         font-size: 0.65em;
-    }
-    .column.column__bottom {
-        margin-top: 3.5em;
     }
     /* Face Left*/
     .examples {
@@ -93,9 +103,9 @@ and (max-height: 960px){
 @media screen
 and (max-width: 1440px)
 and (max-height: 900px){
-    .face.center {
+    /* .face.center {
         background-color: tomato;
-    }
+    } */
     .hero__info {
         font-size: 0.85em;
     }
@@ -119,23 +129,54 @@ and (max-height: 1050px){
 @media screen
 and (max-width: 1366px)
 and (max-height: 768px){
+    #video {
+        height: auto;
+        width: 100%;   
+    }
     .face.center {
         background-color: violet;
     }
+    .column.column__bottom {
+        margin-top: 5em;
+    }
+    .hero__info {
+        font-size: 0.75em;
+    }
+    .hero__img {
+        width: 7em;
+        height: 7em;
+    }
+    .area__img {
+        width: 9em;
+        height: 9em;
+    }
+    .area__title {
+        font-size: 2.7em;
+    }
+/*     .hero__info--name h2{
+        font-size: 0.8em;
+    } */
+    .hero__info--name {
+        font-size: 0.8em;
+    }
     /* Face Up */
     .dev-container {
-        font-size: 0.6em;
+        font-size: 0.55em;
     }
-    /* Face Left and Up*/
+    .skill__img {
+        width: 11em;
+        height: 11em;
+    }
+    /* Face Left*/
     .examples {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
     .knowledge {
         font-size: 0.8em;
     }
     /* Face Right */
     .knowledge-backend {
-        font-size: 1.7em;
+        font-size: 1.4em;
     }
     /* Face Down */
     .grid-container--facedown {
@@ -157,6 +198,45 @@ and (max-height: 960px){
     .face.center {
         background-color: crimson;
     }
+    .hero__info {
+        font-size: 0.75em;
+    }
+    .hero__img {
+        width: 7.5em;
+        height: 7.5em;
+    }
+    .hero__info--name {
+        font-size: 0.7em;
+    }
+    .area__img {
+        width: 11em;
+        height: 11em;
+    }
+    .area__title {
+        font-size: 2.8em;
+    }
+    .column.column__bottom {
+        margin-top: 3.8em;
+    }
+    /* Face Up */
+    .dev-container {
+        font-size: 0.65em;
+    }
+    /* Face Left*/
+    .examples {
+        font-size: 0.9em;
+    }
+    .knowledge {
+        font-size: 0.85em;
+    }
+    /* Face Right */
+    .knowledge-backend {
+        font-size: 1.6em;
+    }
+    /* Face Down */
+    .grid-container--facedown {
+        font-size: 0.6em;
+    }
 }
 
 @media screen
@@ -170,8 +250,48 @@ and (max-height: 854px){
 @media screen
 and (max-width: 1280px)
 and (max-height: 800px){
+    #video {
+        height: 100%;
+        width: auto;   
+    }
     .face.center {
         background-color: floralwhite;
+    }
+    .column.column__bottom {
+        margin-top: 5.6em;
+    }
+    .hero__info {
+        font-size: 0.65em;
+    }
+    .hero__img {
+        width: 6em;
+        height: 6em;
+    }
+    .hero__info--name {
+        font-size: 0.8em;
+    }
+    /* Face Up */
+    .dev-container {
+        font-size: 0.55em;
+    }
+    .skill__img {
+        width: 11em;
+        height: 11em;
+    }
+    /* Face Left*/
+    .examples {
+        font-size: 0.68em;
+    }
+    .knowledge {
+        font-size: 0.68em;
+    }
+    /* Face Right */
+    .knowledge-backend {
+        font-size: 1.2em;
+    }
+    /* Face Down */
+    .grid-container--facedown {
+        font-size: 0.48em;
     }
 }
 
@@ -204,6 +324,20 @@ and (max-width: 1024px)
 and (max-height: 768px){
     .face.center {
         background-color: indigo;
+    }
+    .hero__info {
+        font-size: 0.55em;
+    }
+    .area__img {
+        width: 9em;
+        height: 9em;
+    }
+    .area__title {
+        font-size: 2.3em;
+    }
+    /* Face Up */
+    .dev-container {
+        font-size: 0.5em;
     }
 }
 

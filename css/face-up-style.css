@@ -107,6 +107,25 @@
     color: #273b47;
 }
 
+.icon-github {
+    background-image: url(../imgs/github.png);
+}
+.icon-scrum {
+    background-image: url(../imgs/scrum.png);
+}
+.icon-arquitecturas {
+    background-image: url(../imgs/arquitecturas.png);
+}
+.icon-testing {
+    background-image: url(../imgs/testing.png);
+}
+.icon-redes {
+    background-image: url(../imgs/redes.png);
+}
+.icon-linux {
+    background-image: url(../imgs/linux.png);
+}
+
 .btn-upToCenter {
     opacity: 0.6;
     transition-duration: 1s;

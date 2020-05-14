@@ -470,8 +470,8 @@
     font-size: 0.85em;
 }
 .ico-api {
-    height: 25px;
-    width: 25px;
+    height: 1em;
+    width: 1em;
     border-radius: 50%;
     margin-right: 0.4em;
 }
@@ -532,10 +532,23 @@
     margin-bottom: 0.5em;
 }
 .ico-knowledge {
+
     width: 3.5em;
     height: 3.5em;
     background-color: black;
     border-radius: 50%;
+}
+.ico-container {
+    padding: 0.2em;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.ico-container--sm {
+    padding: 0.6em;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 .icon {
     background-repeat: no-repeat;
@@ -553,6 +566,15 @@
 .icon-sass {
     background-image: url(../imgs/file_type_sass_icon_130182.png);
 }
+.icon-responsive {
+    background-image: url(../imgs/responsive-design.png);
+}
+.icon-jquery {
+    background-image: url(../imgs/jquery.png);
+}
+.icon-asinc {
+    background-image: url(../imgs/js.png);
+}
 
 .lastcourses, .learning {
     display: flex;
@@ -561,12 +583,33 @@
     margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
+.lastcourses {
+    margin-bottom: 1em;
+}
+.lastcourses__item {
+    display: flex;
+    margin-right: 0.4em;
+    margin-left: 0.4em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 33%;
+}
+.lastcourses__item h3{
+    font-size: 0.9em;
+    margin-top: 0.3em;
+}
+
 .learning__item {
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.learning__item h3{
+    font-size: 0.9em;
+    margin-top: 0.3em;
 }
 
 .btn-leftToCenter {
@@ -584,6 +627,7 @@
 .btn-leftToCenter/*  h2, .btn-leftToCenter .rightArrow */ {
     opacity: 0.6;
     transition-duration: 1s;
+    font-size: 0.5em;
 }
 
 .rightArrow {
@@ -591,8 +635,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100px;
-    height: 100px;
+    width: 3.2em;
+    height: 3.2em;
     margin-bottom: 1em;
 }
 
