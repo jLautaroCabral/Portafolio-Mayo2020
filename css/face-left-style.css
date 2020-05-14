@@ -491,7 +491,7 @@
 /*----------------------- API Example END*/
 .knowledge {
     color: #273b47;
-    font-size: 1.1em;
+    font-size: 0.95em;
     height: 100%;
     width: 40%;
     box-sizing: border-box;
@@ -627,7 +627,7 @@
 .btn-leftToCenter/*  h2, .btn-leftToCenter .rightArrow */ {
     opacity: 0.6;
     transition-duration: 1s;
-    font-size: 0.5em;
+    font-size: 0.8em;
 }
 
 .rightArrow {
@@ -635,8 +635,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 3.2em;
-    height: 3.2em;
+    width: 4.2em;
+    height: 4.2em;
     margin-bottom: 1em;
 }
 

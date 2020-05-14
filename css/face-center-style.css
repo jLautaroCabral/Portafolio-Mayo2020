@@ -150,7 +150,7 @@
 }
 
 .column.column__bottom {
-    margin-top: 2em;
+    margin-top: 4em;
     height: 20%;
     width: 30%;
     transform: translate3d(0, -150px, -200px);

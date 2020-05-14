@@ -24,13 +24,14 @@
     display: flex;
     height: 90%;
     margin-bottom: 1.5em;
+    font-size: 0.7;
 }
 
 .skills {
     height: 100%;
     width: 55%;
     display: grid;
-    grid-template: repeat(5, 1fr) / 1fr 2fr 1fr;
+    grid-template: repeat(5, auto) / 1fr 2fr 1fr;
     /* grid-gap: 1em; */
 }
 .skill {
@@ -46,13 +47,12 @@
 .skill__img-container {
     background-color: #FEFEFE;
     padding: 0.5em;
-    box-sizing: border-box;
     position: relative;
     z-index: -1;
 }
 .skill__img {
-    width: 12em;
-    height: 12em;
+    width: 11em;
+    height: 11em;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -73,7 +73,9 @@
 .regex {
     background-image: url(../imgs/regex.jpg);
 }
+
 .skill__info {
+    box-sizing: border-box;
     font-size: 1.2em;
     padding: 1em;
     padding-top: 1.8em;
