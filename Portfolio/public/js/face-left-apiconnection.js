@@ -104,16 +104,9 @@ const api_options_help = 'help/countries?format=json';
 
     const $item__panel__api = document.getElementById('item__panel-api');
     const $tbody_contryTable = document.getElementById('tbody-countriesTable');
+
     let paisesLastInfo = await getData(`${api_Url}${api_options_allCountries}`)
     let paises = await getData(`${api_Url}${api_options_help}`);
-    let [infoPais = 0] = await getData(`${api_Url}${api_options_countryByCode('WLF')}`);
-    
-    console.log(paises);
-    console.log(infoPais);
-
-    console.log(paises.length);
-    console.log(paisesLastInfo[0]);
-    console.log(paisesLastInfo.length);
 
     renderCountryList();
 
