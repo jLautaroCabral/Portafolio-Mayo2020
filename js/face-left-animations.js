@@ -34,7 +34,6 @@ let $submarine__periscope = document.getElementById('submarine-periscope');
 let $submarine__tail = document.getElementById('submarine-tail');
 let $submarine__aleta = document.getElementById('submarine-aleta');
 let $submarine__windows = document.querySelectorAll('#submarine-windows .window');
-console.log($submarine__windows);
 
 // Submarine Keyframes Options START
 
@@ -80,7 +79,6 @@ let optionsSubmarine__Aleta = {
     duration: 300,
     delay: 3000,
     iterations: Infinity,
-    
     easing: 'ease-in'
 }
 // Submarine__Items Keyframes Options END
@@ -90,7 +88,7 @@ let submarineDownKeyframes = new KeyframeEffect(
     $buttonExample3,
     [
       { transform: 'translateY(0%)' }, 
-      { transform: 'translateY(500%)' } 
+      { transform: 'translateY(200%)' } 
     ], 
     optionsSubmarineDownKeyFrames 
 );
@@ -98,8 +96,8 @@ let submarineDownKeyframes = new KeyframeEffect(
 let submarineFloatKeyframes = new KeyframeEffect( 
     $buttonExample3,
     [
-      { transform: 'translateY(500%)' }, // keyframe 
-      { transform: 'translateY(580%)' } // keyframe
+      { transform: 'translateY(200%)' }, // keyframe 
+      { transform: 'translateY(280%)' } // keyframe
     ], 
     optionsSubmarineFloatKeyFrames 
 );
@@ -108,7 +106,7 @@ let submarineGoKeyframes = new KeyframeEffect(
     $buttonExample3,
     [
       { right: '0%' }, // keyframe 
-      { right: '-500%' } // keyframe
+      { right: '-300%' } // keyframe
     ], 
     optionsSubmarineGoKeyFrames
 );
@@ -158,7 +156,7 @@ let submarine__aletaKeyframes = new KeyframeEffect(
     $submarine__aleta,
     [
         {transform: 'rotate(0deg)'},
-        {transform: 'rotate(360deg)'}
+        {transform: 'rotate(360deg)'},
     ],
     optionsSubmarine__Aleta
 );
@@ -167,10 +165,8 @@ let submarine__aletaKeyframes = new KeyframeEffect(
 // Submarine Animations START
 let animationSubmarineDown = new Animation();
 animationSubmarineDown.effect = submarineDownKeyframes;
-
 let animationSubmarineFloat = new Animation();
 animationSubmarineFloat.effect = submarineFloatKeyframes;
-
 let animationSubmarineGo = new Animation();
 animationSubmarineGo.effect = submarineGoKeyframes;
 // Submarine Animations END
@@ -178,10 +174,8 @@ animationSubmarineGo.effect = submarineGoKeyframes;
 // Submarine__Items Animations START
 let animationSubmarine__hatch = new Animation();
 animationSubmarine__hatch.effect = submarine__hatchKeyFrames;
-
 let animationSubmarine__periscope = new Animation();
 animationSubmarine__periscope.effect = submarine__periscopeKeyFrames;
-
 let animationSubmarine__tail = new Animation();
 animationSubmarine__tail.effect = submarine__tailKeyframes;
 
@@ -195,23 +189,48 @@ let animationSubmarine__aleta = new Animation();
 animationSubmarine__aleta.effect = submarine__aletaKeyframes;
 // Submarine__Items Animations END
 
-
-/////////////////////////////////////////////// Eventos
+const buttonInitialValues = {
+    right: $buttonExample3.style.right,
+    transform: $buttonExample3.style.position
+}
 
 animationSubmarineDown.addEventListener('finish', () => {
     $buttonExample3.firstElementChild.classList.add('fadeOut');
     
-    animationSubmarineFloat.play();
+    
     animationSubmarine__hatch.play();
     animationSubmarine__periscope.play();
     animationSubmarine__tail.play();
     animationSubmarine__windows.forEach(element => element.play());
+    animationSubmarineFloat.play();
     animationSubmarine__aleta.play();
 
     animationSubmarineGo.play();
 });
 
-$buttonExample3.addEventListener('click', () => {
+animationSubmarineGo.addEventListener('finish', () => {
+    // Let's restore everything
+    animationSubmarine__hatch.cancel();
+    animationSubmarine__periscope.cancel();
+    animationSubmarine__tail.cancel();
+    animationSubmarine__windows.forEach(element => element.cancel());
+    animationSubmarineFloat.pause();
+    animationSubmarineFloat.cancel();
+    animationSubmarine__aleta.pause();
+    animationSubmarine__aleta.cancel();
+    animationSubmarineGo.cancel();
+    $buttonExample3.addEventListener('click', playSubmarineAnimation);
+    console.log("Animation end");
+})
+
+/////////////////////////////////////////////// Events
+
+
+
+$buttonExample3.addEventListener('click', playSubmarineAnimation);
+
+function playSubmarineAnimation() {
+    $buttonExample3.removeEventListener('click', playSubmarineAnimation);
     animationSubmarineDown.play();
-});
+}
 

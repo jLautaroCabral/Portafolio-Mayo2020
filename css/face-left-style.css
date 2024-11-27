@@ -8,7 +8,7 @@
 }
 
 .examples {
-    text-shadow: 0px 2px 1px #1b262c;
+    /*text-shadow: 0px 2px 1px #1b262c;*/
     font-size: 1.2em;
     font-weight: 600;
     height: 100%;
@@ -18,7 +18,7 @@
     justify-content: space-between;
 }
 .examples__item {
-    box-shadow: inset 0px 0px 37px -3px rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
     padding: 1.5em;
     box-sizing: border-box;
     display: flex;
@@ -55,14 +55,15 @@
     cursor: pointer;
     box-sizing: border-box;
     text-align: center;
-    background: #0f4c75;
+    background: var(--blue-dark);
     width: 45%;
     height: 25%;
     border-radius: 15px;
+    
 }
 #buttonExample1 {
     padding-top: 0.45em;
-    z-index: 1;
+    z-index: 10;
     position: relative;
     animation: bullet;
     animation-duration: 2s;
@@ -149,7 +150,7 @@
     position: absolute;
     height: 100%;
     width: 20%;
-    background: #0f4c75;
+    background: var(--blue-dark);
     z-index: -1;
 }
 #submarine-periscope {
@@ -159,11 +160,11 @@
     width: 0.5em;
     height: 1.5em;
     border-radius: 20%;
-    border-top: #0f4c75 0.5em solid;
-    border-left: #0f4c75 0.5em solid;
+    border-top: var(--blue-dark) 0.5em solid;
+    border-left: var(--blue-dark) 0.5em solid;
     transform: rotate(90deg);
-    top: -1em;
-    right: 1em;
+    top: -1.25em;
+    right: 2em;
     z-index: -1;
 }
 #submarine-tail {
@@ -171,7 +172,7 @@
     display: flex;
     height: 0.6em;
     width: 3em;
-    background: #0f4c75;
+    background: var(--blue-dark);
     align-items: center;
     z-index: -1;
 }
@@ -180,7 +181,7 @@
     height: 1.5em;
     width: 0.5em;
     border-radius: 40%;
-    background:#0f4c75;
+    background:var(--blue-dark);
     z-index: -1;
 }
 #submarine-windows {
@@ -205,6 +206,10 @@
 /*----------------------- Animations Examples END*/
 
 /*----------------------- CSS Grid Examples START*/
+.examples__item .example__grid1 {
+    position: relative;
+    z-index: -5;
+}
 .example__grid1 {
     width: 40%;
     height: 40%;
@@ -213,11 +218,11 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-auto-flow: column;
+    
 }
 .grid__item {
-    background: #f2f6f5f5;
-    position: relative;
-    z-index: -20;
+    background: var(--white);
+    /*position: relative;   */
 }
 
 .grid1__item--b {
@@ -490,7 +495,7 @@
 
 /*----------------------- API Example END*/
 .knowledge {
-    color: #273b47;
+    
     font-size: 0.95em;
     height: 100%;
     width: 40%;
@@ -506,9 +511,9 @@
     width: 80%;
     padding: 1em;
     border-radius: 1em;
-    border-bottom: #93b5b3 2px solid;
-    background-color: #f2f6f5b2;
-    background-position-y: bottom;
+    /*border-bottom: #93b5b3 2px solid;*/
+    
+    /*background-position-y: bottom;*/
 }
 
 .knowledge h1 {
@@ -614,7 +619,6 @@
 
 .btn-leftToCenter {
     cursor: pointer;
-    box-shadow: inset 0px 0px 37px -3px rgba(0,0,0,0.5);
     width: 8%;
     display: flex;
     justify-content: center;
@@ -624,8 +628,8 @@
     position: relative;
 }
 
-.btn-leftToCenter/*  h2, .btn-leftToCenter .rightArrow */ {
-    opacity: 0.6;
+.btn-leftToCenter {
+    /*opacity: 0.6;*/
     transition-duration: 1s;
     font-size: 0.8em;
 }

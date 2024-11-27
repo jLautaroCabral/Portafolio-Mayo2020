@@ -1,43 +1,6 @@
 const $faceMain = document.getElementById('faceMain');
 const $videoBackground = document.getElementById('video');
 
-function fromToCenter(String) {
-    $faceMain.animate
-    ([
-        //from
-        {
-            transform: String
-        },
-        // to
-        {
-            transform: 'translateX(0)'
-        }
-    ],
-    {
-        duration: 1200,
-        easing: 'ease-in-out',
-        fill: 'forwards'
-    })
-    backgroundFromToCenter(String);
-}
-function backgroundFromToCenter(String) {
-    $videoBackground.animate
-    ([
-        //from
-        {
-            transform: `${String} scale(3)`
-        },
-        // to
-        {
-            transform: `translateX(0) scale(3)`
-        }
-    ],
-    {
-        duration: 1200,
-        easing: 'ease-in-out',
-        fill: 'forwards'
-    })
-}
 function centerTo(String) {
     $faceMain.animate
     ([
@@ -57,7 +20,28 @@ function centerTo(String) {
     })
     backgroundTo(String);
 }
+function fromToCenter(String) {
+    $faceMain.animate
+    ([
+        //from
+        {
+            transform: String
+        },
+        // to
+        {
+            transform: 'translateX(0)'
+        }
+    ],
+    {
+        duration: 1200,
+        easing: 'ease-in-out',
+        fill: 'forwards'
+    })
+    backgroundFromToCenter(String);
+}
+
 function backgroundTo(String) {
+    
     $videoBackground.animate
     ([
         //from
@@ -67,6 +51,25 @@ function backgroundTo(String) {
         // to
         {
             transform: `${String} scale(3)`
+        }
+    ],
+    {
+        duration: 1200,
+        easing: 'ease-in-out',
+        fill: 'forwards'
+    })
+}
+function backgroundFromToCenter(String) {
+    
+    $videoBackground.animate
+    ([
+        //from
+        {
+            transform: `${String} scale(3)`
+        },
+        // to
+        {
+            transform: `translateX(0) scale(3)`
         }
     ],
     {

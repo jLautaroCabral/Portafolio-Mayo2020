@@ -1,21 +1,35 @@
 :root {
+    --font-size: 10px;
     --size-face: 100%;
+    --gray: #c8dad3;
+    --white: #f2f6f5;
+    --blue-dark: #00025d;
+    --black-s-transparent: rgba(0,0,0,0.35);
+    --gray-s-transparent: #93b5b383;
+    --gray-light-s-transparent: #b6b6b663;
     /* --size-face: 800px; */
 }
 
+/*
 @import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+*/
+@font-face {
+    font-family: "Mona Sans";
+    src: url("assets/fonts/Mona-Sans.woff2") format("woff2 supports variations"),
+      url("assets/fonts/Mona-Sans.woff2") format("woff2-variations");
+    font-display: swap;
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
 
-
-/* .button {
-    width: 100px;
-    height: 100px;
-    background: red;
-} */
-
-body, h1, h2, h3, p{
+html {
+    font-family: "Mona Sans", sans-serif;
+    box-sizing: border-box;
+}
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
@@ -34,8 +48,8 @@ a {
     bottom: 0;
     right: 0;
     left: 0;
+    
 }
-
 .main-container {
     width: 100%;
     height: 100%;
@@ -43,39 +57,35 @@ a {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border: 1px solid red;
 }
-
 .face {
     width: var(--size-face);
     height: var(--size-face);
     margin: 0;
     padding: 0;
+    border: 1px solid blue;
 }
-
 .face.main {
     position: relative;
     will-change: transform;
+    border: 1px solid green;
 }
-
 .face.center {
     position: absolute;
 }
-
 .face.up {
     position: absolute;
     top: calc(-100%);
 }
-
 .face.down {
     position: absolute;
     bottom: calc(-100%);
 }
-
 .face.left {
     position: absolute;
     left: calc(-100%);
 }
-
 .face.right {
     position: absolute;
     right: calc(-100%);
@@ -88,28 +98,24 @@ a {
     padding: 0;
     overflow: hidden;
     color: #f2f6f5;
-    /* font-family: 'Basic', sans-serif; */
-    font-family: 'Inder', sans-serif;
-    /* font-family: 'Mandali', sans-serif; */
     font-size: 16px;
 }
 #video {
     position: absolute;
-    left: 0;
     top: 0;
-    right: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%; /* Make the video fill the width */
+    height: 100%; /* Make the video fill the height */
+    object-fit: cover; /* This ensures the video fills the box without distortion, and may crop if necessary */
     z-index: -10;
-    visibility: visible;
     transform: scale(3);
 }
 
-/* .background-video {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    z-index: 10;
-    background-color: red;
-} */
+.s-transparent-box {
+    box-shadow: inset 0px -86px 86px -28px var(--gray-light-s-transparent);
+}
+.blur {
+    /*backdrop-filter: blur(10px);  Apply blur to the background behind the box */
+}
