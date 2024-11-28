@@ -18,8 +18,8 @@
 */
 @font-face {
     font-family: "Mona Sans";
-    src: url("assets/fonts/Mona-Sans.woff2") format("woff2 supports variations"),
-      url("assets/fonts/Mona-Sans.woff2") format("woff2-variations");
+    src: url("fonts/Mona-Sans.woff2") format("woff2 supports variations"),
+      url("fonts/Mona-Sans.woff2") format("woff2-variations");
     font-display: swap;
     font-weight: 200 900;
     font-stretch: 75% 125%;
@@ -34,7 +34,7 @@ body, h1, h2, h3, p {
     padding: 0;
 }
 a {
-    color: #f2f6f5;;
+    color: var(--white);;
     text-shadow: none;
 }
 
@@ -48,7 +48,6 @@ a {
     bottom: 0;
     right: 0;
     left: 0;
-    
 }
 .main-container {
     width: 100%;
@@ -57,16 +56,14 @@ a {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: 1px solid red;
 }
 .face {
     width: var(--size-face);
     height: var(--size-face);
     margin: 0;
     padding: 0;
-    border: 1px solid blue;
 }
-.face.main {
+#faceMain {
     position: relative;
     will-change: transform;
     border: 1px solid green;
@@ -97,7 +94,7 @@ a {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    color: #f2f6f5;
+    color: var(--white);
     font-size: 16px;
 }
 #video {

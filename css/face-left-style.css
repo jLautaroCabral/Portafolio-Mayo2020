@@ -71,6 +71,8 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+/* TODO: There is a better way to do this */
 @keyframes bullet {
     0% {
         transform: translateX(0);
