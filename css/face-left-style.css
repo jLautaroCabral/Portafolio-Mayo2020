@@ -1,15 +1,42 @@
-.flex-container {
+.flex_container {
     height: 100%;
     width: 100%;
     display: flex;
-    padding: 2.5em;
     box-sizing: border-box;
     justify-content: space-between;
+    flex-direction: row;
 }
 
-.examples {
-    /*text-shadow: 0px 2px 1px #1b262c;*/
-    font-size: 1.2em;
+.knowledge {
+    height: 100%;
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.knowledge article {
+    font-weight: 600;
+    text-align: left;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.knowledge h1 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.knowledge h2 {
+    margin-bottom: 0.5rem;
+}
+.knowledge a {
+    color: #273b47;
+}
+
+
+.samples_container {
     font-weight: 600;
     height: 100%;
     width: 50%;
@@ -17,30 +44,128 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.examples__item {
-    border-radius: 0px;
-    padding: 1.5em;
+
+.techs_container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 70%;
+    margin: 2rem auto;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+.tech_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tech_container h3{
+    font-size: 0.9em;
+    margin-top: 0.3em;
+}
+
+.icon_tech {
+    width: 4rem;
+    height: 4rem;
+    background-color: black;
+    border-radius: 50%;
+}
+.icon_tech--sm {
+    padding: 0.6em;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.icon-react {
+    background-image: url(../imgs/file_type_reactjs_icon_130205.png);
+}
+.icon-angular {
+    background-image: url(../imgs/file_type_angular_icon_130754.png);
+}
+.icon-sass {
+    background-image: url(../imgs/file_type_sass_icon_130182.png);
+}
+.icon-responsive {
+    background-image: url(../imgs/responsive-design.png);
+}
+.icon-jquery {
+    background-image: url(../imgs/jquery.png);
+}
+.icon-asinc {
+    background-image: url(../imgs/js.png);
+}
+
+.btn-leftToCenter {
+    cursor: pointer;
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.btn-leftToCenter {
+    transition-duration: 1s;
+    font-size: 0.8em;
+}
+
+.rightArrow {
+    background-image: url('../imgs/left-and-right-arrows.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 4.2em;
+    height: 4.2em;
+    margin-bottom: 1em;
+}
+
+.fadeOut {
+    opacity: 0;
+}
+.fadeIn {
+    opacity: 1;
+}
+
+.btn-leftToCenter:hover {
+    opacity: 1;
+}
+
+
+.front-examples-item {
+    padding: 1.8rem;
     box-sizing: border-box;
     display: flex;
 }
-.examples__item:nth-child(2) {
+.front-examples-item:nth-child(2) {
     height: 23%;
 }
-.examples__item:last-child {
+.front-examples-item:last-child {
     height: 48%;
+    flex-direction: column;
 }
-.item__info {
+.item-description {
     box-sizing: border-box;
+    margin-bottom: 2rem;
     width: 63%;
 }
-.item__info h2 {
+.item-description h2 {
     margin-bottom: 0.3em;
 }
-.item__info a {
-    color: #f2f6f5;;
-    text-shadow: none;
+.item-description a {
+    color: var(--white);
 }
-.item__example {
+.item-example {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -50,7 +175,7 @@
 
 
 /*----------------------- Animations Examples START*/
-.example__button {
+.button {
     text-shadow: 0px 1px 1px #142850;
     cursor: pointer;
     box-sizing: border-box;
@@ -61,7 +186,7 @@
     border-radius: 15px;
     
 }
-#buttonExample1 {
+#buttonAnimExample1 {
     padding-top: 0.45em;
     z-index: 10;
     position: relative;
@@ -119,7 +244,7 @@
     } 
 }
 
-#buttonExample2 {
+#buttonAnimExample2 {
     display: flex;
     justify-content: space-evenly;
     justify-items: center;
@@ -139,7 +264,7 @@
     transform: scaleY(1);
 }
 
-#buttonExample3 {
+#buttonAnimExample3 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -359,11 +484,11 @@
     width: initial;
 }
 .item__info h2 {
-    margin-bottom: 0.3em;
+    margin-bottom: 0.3rem;
 }
 .item__panel-api {
-    margin-top: 0.5em;
-    border-radius: 1em;
+    margin-top: 0;
+    border-radius: 1rem;
     height: 100%;
     background-color: #020202a2;
     overflow: hidden;
@@ -380,18 +505,17 @@
     width: 70%;
     text-align: start;
 }
-
 .panelApi__table::-webkit-scrollbar {
-    width: 1em;
+    width: 1rem;
 }
 .panelApi__table::-moz-scrollbar {
-    width: 1em;
+    width: 1rem;
 }
 .panelApi__table::-ms-scrollbar {
-    width: 1em;
+    width: 1rem;
 }
 .panelApi__table::-o-scrollbar {
-    width: 1em;
+    width: 1rem;
 }
 
 .panelApi__table::-webkit-scrollbar-thumb {
@@ -494,165 +618,4 @@
 .ico-api-grey {
     background-color: gray;
 }
-
 /*----------------------- API Example END*/
-.knowledge {
-    
-    font-size: 0.95em;
-    height: 100%;
-    width: 40%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.knowledge article {
-    font-weight: 600;
-    text-align: center;
-    width: 80%;
-    padding: 1em;
-    border-radius: 1em;
-    /*border-bottom: #93b5b3 2px solid;*/
-    
-    /*background-position-y: bottom;*/
-}
-
-.knowledge h1 {
-    font-size: 2em;
-    margin-top: 0.5em;
-    margin-bottom: 0.7em;
-}
-.knowledge h2 {
-    margin-bottom: 0.5em;
-}
-.knowledge a {
-    color: #273b47;
-}
-
-.knowledge__list ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.knowledge__list li {
-    margin-bottom: 0.5em;
-}
-.ico-knowledge {
-
-    width: 3.5em;
-    height: 3.5em;
-    background-color: black;
-    border-radius: 50%;
-}
-.ico-container {
-    padding: 0.2em;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-.ico-container--sm {
-    padding: 0.6em;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-.icon {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-.icon-react {
-    background-image: url(../imgs/file_type_reactjs_icon_130205.png);
-}
-.icon-angular {
-    background-image: url(../imgs/file_type_angular_icon_130754.png);
-}
-.icon-sass {
-    background-image: url(../imgs/file_type_sass_icon_130182.png);
-}
-.icon-responsive {
-    background-image: url(../imgs/responsive-design.png);
-}
-.icon-jquery {
-    background-image: url(../imgs/jquery.png);
-}
-.icon-asinc {
-    background-image: url(../imgs/js.png);
-}
-
-.lastcourses, .learning {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-}
-.lastcourses {
-    margin-bottom: 1em;
-}
-.lastcourses__item {
-    display: flex;
-    margin-right: 0.4em;
-    margin-left: 0.4em;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 33%;
-}
-.lastcourses__item h3{
-    font-size: 0.9em;
-    margin-top: 0.3em;
-}
-
-.learning__item {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.learning__item h3{
-    font-size: 0.9em;
-    margin-top: 0.3em;
-}
-
-.btn-leftToCenter {
-    cursor: pointer;
-    width: 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-}
-
-.btn-leftToCenter {
-    /*opacity: 0.6;*/
-    transition-duration: 1s;
-    font-size: 0.8em;
-}
-
-.rightArrow {
-    background-image: url('../imgs/left-and-right-arrows.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 4.2em;
-    height: 4.2em;
-    margin-bottom: 1em;
-}
-
-.fadeOut {
-    opacity: 0;
-}
-.fadeIn {
-    opacity: 1;
-}
-
-.btn-leftToCenter:hover {
-    opacity: 1;
-}

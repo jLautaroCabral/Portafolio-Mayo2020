@@ -1,5 +1,5 @@
 /////////////////////////////////////////////// Animacion Boton 1
-let buttonExample1 = document.getElementById('buttonExample1');
+let buttonExample1 = document.getElementById('buttonAnimExample1');
 
 buttonExample1.addEventListener('click', () => {
     buttonExample1.style.animationPlayState = 'running';
@@ -9,7 +9,7 @@ buttonExample1.addEventListener('animationiteration', () => {
 });
 
 /////////////////////////////////////////////// Animacion Boton 2
-let buttonExample2 = document.getElementById('buttonExample2');
+let buttonExample2 = document.getElementById('buttonAnimExample2');
 let eyeanimations = document.querySelectorAll('#eyeanimation');
 
 for (let i = 0; i < eyeanimations.length; i++) {
@@ -27,7 +27,7 @@ buttonExample2.addEventListener('click', () => {
 
 
 /////////////////////////////////////////////// Animacion Boton 3
-let buttonExample3 = document.getElementById('buttonExample3');
+let buttonExample3 = document.getElementById('buttonAnimExample3');
 
 let submarineHatch = document.getElementById('submarine-hatch');
 let submarinePeriscope = document.getElementById('submarine-periscope');

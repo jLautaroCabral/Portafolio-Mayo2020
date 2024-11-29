@@ -10,12 +10,6 @@
     /* --size-face: 800px; */
 }
 
-/*
-@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
-*/
 @font-face {
     font-family: "Mona Sans";
     src: url("fonts/Mona-Sans.woff2") format("woff2 supports variations"),
@@ -29,13 +23,16 @@ html {
     font-family: "Mona Sans", sans-serif;
     box-sizing: border-box;
 }
-body, h1, h2, h3, p {
+body, h1, h2, h3, p, div {
     margin: 0;
     padding: 0;
 }
 a {
     color: var(--white);;
     text-shadow: none;
+}
+section {
+    font-size: 1.1rem;
 }
 
 .view {
@@ -62,40 +59,38 @@ a {
     height: var(--size-face);
     margin: 0;
     padding: 0;
+    position: absolute;
 }
 #faceMain {
     position: relative;
     will-change: transform;
     border: 1px solid green;
-}
-.face.center {
-    position: absolute;
+    width: var(--size-face);
+    height: var(--size-face);
+    margin: 0;
+    padding: 0;
 }
 .face.up {
-    position: absolute;
     top: calc(-100%);
 }
 .face.down {
-    position: absolute;
     bottom: calc(-100%);
 }
 .face.left {
-    position: absolute;
     left: calc(-100%);
 }
 .face.right {
-    position: absolute;
     right: calc(-100%);
 }
 
 .screen-body {
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     color: var(--white);
     font-size: 16px;
+    padding: 2.5rem;
+    box-sizing: border-box;
 }
 #video {
     position: absolute;
@@ -103,9 +98,9 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%; /* Make the video fill the width */
-    height: 100%; /* Make the video fill the height */
-    object-fit: cover; /* This ensures the video fills the box without distortion, and may crop if necessary */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: -10;
     transform: scale(3);
 }
@@ -114,5 +109,6 @@ a {
     box-shadow: inset 0px -86px 86px -28px var(--gray-light-s-transparent);
 }
 .blur {
+    /* TODO: I am not sure if finally I will apply this */
     /*backdrop-filter: blur(10px);  Apply blur to the background behind the box */
 }
