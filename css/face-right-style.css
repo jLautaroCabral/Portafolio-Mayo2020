@@ -19,7 +19,6 @@
 
 .btn-rightToCenter {
     cursor: pointer;
-    box-shadow: inset 0px 0px 37px -3px rgba(0,0,0,0.5);
     width: 8%;
     display: flex;
     justify-content: center;
@@ -33,16 +32,21 @@
 }
 
 
+
+
 .samples_container.backend {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .samples_container.backend article {
     padding: 1.8rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+}
+.framework_pairs_container {
+
 }
 .samples_container.backend .item-description {
     width: auto;
@@ -72,6 +76,7 @@
     height: 4.2em;
     margin-bottom: 1em;
 }
+
 
 .btn-rightToCenter:hover {
     opacity: 1;

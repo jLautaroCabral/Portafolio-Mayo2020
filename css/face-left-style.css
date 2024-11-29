@@ -113,9 +113,6 @@
     flex-direction: column;
     text-align: center;
     position: relative;
-}
-
-.btn-leftToCenter {
     transition-duration: 1s;
     font-size: 0.8em;
 }
