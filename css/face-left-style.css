@@ -490,11 +490,6 @@
     background-color: #020202a2;
     overflow: hidden;
     display: flex;
-    /* width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; */
 }
 .panelApi__table {
     overflow: auto;
