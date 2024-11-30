@@ -110,5 +110,5 @@ section {
 }
 .blur {
     /* TODO: I am not sure if finally I will apply this */
-    /*backdrop-filter: blur(10px);  Apply blur to the background behind the box */
+    backdrop-filter: blur(5px);
 }
