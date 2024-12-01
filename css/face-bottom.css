@@ -1,0 +1,29 @@
+.btn-downToCenter {
+    grid-area: b;
+    opacity: 0.6;
+    transition-duration: 1s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+.btn-downToCenter h2 {
+    margin-bottom: 1em;
+}
+.btn-downToCenter:hover {
+    opacity: 1;
+}
+.upArrow {
+    background-image: url('../imgs/left-and-right-arrows.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-top: 0.5em;
+    transform: rotate(-90deg);
+}

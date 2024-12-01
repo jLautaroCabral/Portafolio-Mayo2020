@@ -1,5 +1,5 @@
 const $faceMain = document.getElementById('faceMain');
-const $videoBackground = document.getElementById('video');
+const $videoBackground = document.getElementById('background_video');
 
 function centerTo(String) {
     $faceMain.animate

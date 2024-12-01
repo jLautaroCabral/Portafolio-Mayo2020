@@ -1,46 +1,3 @@
-.grid-container--facedown {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    padding: 2em;
-    grid-template: 10% 1fr / 1fr 1fr;
-    grid-template-areas: "b b"
-                         "c j";
-    box-sizing: border-box;
-    grid-gap: 1em;
-    font-size: 0.8em;
-}
-
-
-.btn-downToCenter {
-    grid-area: b;
-    opacity: 0.6;
-    transition-duration: 1s;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-    box-sizing: border-box;
-}
-.btn-downToCenter h2 {
-    margin-bottom: 1em;
-}
-.upArrow {
-    background-image: url('../imgs/left-and-right-arrows.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 30px;
-    height: 30px;
-    margin-top: 0.5em;
-    transform: rotate(-90deg);
-}
-.btn-downToCenter:hover {
-    opacity: 1;
-}
 
 
 .other {
@@ -144,7 +101,6 @@
 .example__game:nth-child(2) {
     background-image: url(../imgs/freefall\ light.png);
 }
-
 .game__title {
     width: 100%;
     height: 18%;
@@ -153,7 +109,6 @@
     text-align: center;
     padding-top: 0.5em;   
 }
-
 .example__program {
     width: 38em;
     height:24em;
@@ -174,4 +129,16 @@
     background: rgba(12, 11, 11, 0.856);
     text-align: center;
     padding-top: 0.5em;   
+}
+.grid-container--facedown {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    grid-template: 10% 1fr / 1fr 1fr;
+    grid-template-areas: "b b"
+                         "c j";
+    box-sizing: border-box;
+    grid-gap: 1em;
+    font-size: 0.8em;
 }

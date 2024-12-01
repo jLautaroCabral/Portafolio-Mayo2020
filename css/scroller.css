@@ -1,61 +1,62 @@
 
-.scroller::-webkit-scrollbar {
+.scroller_Y::-webkit-scrollbar {
     width: 1rem;
 }
-.scroller::-moz-scrollbar {
+.scroller_Y::-moz-scrollbar {
     width: 1rem;
 }
-.scroller::-ms-scrollbar {
+.scroller_Y::-ms-scrollbar {
     width: 1rem;
 }
-.scroller::-o-scrollbar {
+.scroller_Y::-o-scrollbar {
     width: 1rem;
 }
-.scroller::-webkit-scrollbar-thumb {
+.scroller_Y::-webkit-scrollbar-thumb {
     background-color: #273b47a2;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
 }
-.scroller::-moz-scrollbar-thumb {
+.scroller_Y::-moz-scrollbar-thumb {
     background-color: #273b47a2;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
 }
-.scroller::-ms-scrollbar-thumb {
+.scroller_Y::-ms-scrollbar-thumb {
     background-color: #273b47a2;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
 }
-.scroller::-o-scrollbar-thumb {
+.scroller_Y::-o-scrollbar-thumb {
     background-color: #273b47a2;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
 }
-.scroller::-webkit-scrollbar-thumb:hover,
-.scroller::-webkit-scrollbar-thumb:active {
+.scroller_Y::-webkit-scrollbar-thumb:hover,
+.scroller_Y::-webkit-scrollbar-thumb:active {
     background-color: #1c272ea2;
 }
-.scroller::-moz-scrollbar-thumb:hover,
-.scroller::-moz-scrollbar-thumb:active {
+.scroller_Y::-moz-scrollbar-thumb:hover,
+.scroller_Y::-moz-scrollbar-thumb:active {
     background-color: #1c272ea2;
 }
-.scroller::-ms-scrollbar-thumb:hover,
-.scroller::-ms-scrollbar-thumb:active {
+.scroller_Y::-ms-scrollbar-thumb:hover,
+.scroller_Y::-ms-scrollbar-thumb:active {
     background-color: #1c272ea2;
 }
-.scroller::-o-scrollbar-thumb:hover,
-.scroller::-o-scrollbar-thumb:active {
+.scroller_Y::-o-scrollbar-thumb:hover,
+.scroller_Y::-o-scrollbar-thumb:active {
     background-color: #1c272ea2;
 }
-.scroller::-webkit-scrollbar-track {
+.scroller_Y::-webkit-scrollbar-track {
+    background-color: var(--gray-s-transparent);
+    border-radius: 0.5rem;
+}
+.scroller_Y::-moz-scrollbar-track {
     background-color: var(--gray-s-transparent);
 }
-.scroller::-moz-scrollbar-track {
+.scroller_Y::-ms-scrollbar-track {
     background-color: var(--gray-s-transparent);
 }
-.scroller::-ms-scrollbar-track {
-    background-color: var(--gray-s-transparent);
-}
-.scroller::-o-scrollbar-track {
+.scroller_Y::-o-scrollbar-track {
     background-color: var(--gray-s-transparent);
 }
 
-.scroller {
+.scroller_Y {
     overflow-y:auto;
 }

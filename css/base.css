@@ -7,7 +7,6 @@
     --black-s-transparent: rgba(0,0,0,0.35);
     --gray-s-transparent: #93b5b383;
     --gray-light-s-transparent: #b6b6b663;
-    /* --size-face: 800px; */
 }
 
 @font-face {
@@ -35,80 +34,56 @@ section {
     font-size: 1.1rem;
 }
 
-.view {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-.main-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.face {
-    width: var(--size-face);
-    height: var(--size-face);
-    margin: 0;
-    padding: 0;
-    position: absolute;
-}
-#faceMain {
-    position: relative;
-    will-change: transform;
-    border: 1px solid green;
-    width: var(--size-face);
-    height: var(--size-face);
-    margin: 0;
-    padding: 0;
-}
-.face.up {
-    top: calc(-100%);
-}
-.face.down {
-    bottom: calc(-100%);
-}
-.face.left {
-    left: calc(-100%);
-}
-.face.right {
-    right: calc(-100%);
-}
-
-.screen-body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    color: var(--white);
-    font-size: 16px;
-    padding: 2.5rem;
-    box-sizing: border-box;
-}
-#video {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -10;
-    transform: scale(3);
-}
-
-.s-transparent-box {
+.s_transparent_box {
     box-shadow: inset 0px -86px 86px -28px var(--gray-light-s-transparent);
 }
 .blur {
     /* TODO: I am not sure if finally I will apply this */
     backdrop-filter: blur(5px);
+}
+
+.flex_container_x {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.flex_container_y {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.articles_container_A {
+    height: 100%;
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.articles_container_A article {
+    font-weight: 600;
+    text-align: left;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.articles_container_A h1 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.articles_container_A h2 {
+    margin-bottom: 0.5rem;
+}
+.articles_container_A a {
+    color: #273b47;
 }

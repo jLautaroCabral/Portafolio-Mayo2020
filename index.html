@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/face-center-style.css">
-    <link rel="stylesheet" href="css/face-left-style.css">
-    <link rel="stylesheet" href="css/face-bottom-style.css">
-    <link rel="stylesheet" href="css/face-up-style.css">
-    <link rel="stylesheet" href="css/face-right-style.css">
+    <link rel="stylesheet" href="css/base-faces.css">
+    <link rel="stylesheet" href="css/face-center.css">
+    <link rel="stylesheet" href="css/face-left.css">
+    <link rel="stylesheet" href="css/face-bottom.css">
+    <link rel="stylesheet" href="css/face-up.css">
+    <link rel="stylesheet" href="css/face-right.css">
     <link rel="stylesheet" href="css/responsive-desing.css">
     <link rel="stylesheet" href="css/scroller.css">
 </head>
@@ -22,7 +23,7 @@
 
                 <!--------------------------------------------------- FACE CENTER  -->
                 <div class="face center">
-                    <div class="screen-body">
+                    <div class="face_body scroller_Y">
                         <!-------------------------------------- HERO -->
                         <section class="hero">
                             <div class="hero__info">
@@ -48,7 +49,7 @@
                         </section>
                         <!-------------------------------------- NAVIGATION -->
                         <nav class="navigation">
-                            <div class="column column__left s-transparent-box blur" id="frontEndButton">
+                            <div class="column column__left s_transparent_box blur" id="frontEndButton">
                                 <div class="area">
                                     <div class="area__img frontend"></div>
                                     <h1 class="area__title">Front End</h1>
@@ -56,7 +57,7 @@
                                 </div>
                             </div>
 
-                            <div class="column column__center s-transparent-box blur" id="devButton">
+                            <div class="column column__center s_transparent_box blur" id="devButton">
                                 <div class="area">
                                     <div class="area__img dev"></div>
                                     <h1 class="area__title">Game Dev</h1>
@@ -64,14 +65,14 @@
                                 </div>
                             </div>
 
-                            <div class="column column__right s-transparent-box blur" id="backEndButton">
+                            <div class="column column__right s_transparent_box blur" id="backEndButton">
                                 <div class="area">
                                     <div class="area__img backend"></div>
                                     <h1 class="area__title">Back End</h1>
                                     <div class="effect-selector"></div>
                                 </div>
                             </div>
-                            <div class="column column__bottom s-transparent-box blur" id="othersButton">
+                            <div class="column column__bottom s_transparent_box blur" id="othersButton">
                                 <div class="area">
                                     <h1 class="area__title">Extra</h1>
                                     <div class="effect-selector"></div>
@@ -82,10 +83,10 @@
                 </div>
                 <!--------------------------------------------------- FACE LEFT  -->
                 <div class="face left">
-                    <div class="screen-body">
-                        <div class="flex_container frontend">
+                    <div class="face_body scroller_Y">
+                        <div class="flex_container_x frontend">
                             <section class="samples_container">
-                                <article class="front-examples-item s-transparent-box blur">
+                                <article class="front-examples-item s_transparent_box blur">
                                     <div class="item-description">
                                         <h2>Animations</h2>
                                         <p>With CSS and JavaScript I can turn static pages into animated and interactive
@@ -114,320 +115,469 @@
                                         </div>
                                     </div>
                         </div>
-                        </article>
+                                </article>
 
-                        <article class="front-examples-item s-transparent-box blur">
-                            <div class="item-description">
-                                <h2>CSS Grid Layout</h2>
-                                <p>With CSS Grid I can structure content in a much more original and efficient way. At
-                                    the same time significantly facilitate responsive design.</p>
+                                <article class="front-examples-item s_transparent_box blur">
+                                    <div class="item-description">
+                                        <h2>CSS Grid Layout</h2>
+                                        <p>With CSS Grid I can structure content in a much more original and efficient way. At
+                                            the same time significantly facilitate responsive design.</p>
+                                    </div>
+                                    <div class="item-example">
+                                        <div class="example__grid1">
+                                            <div class="grid__item grid1__item--a gridItAnim gridItAnim-down"></div>
+                                            <div class="grid__item grid1__item--b gridItAnim gridItAnim-up"></div>
+                                            <div class="grid__item grid1__item--b gridItAnim gridItAnim-down"></div>
+                                            <div class="grid__item grid1__item--a gridItAnim gridItAnim-up"></div>
+                                            <div class="grid__item grid1__item--a gridItAnim gridItAnim-down"></div>
+                                            <div class="grid__item grid1__item--b gridItAnim gridItAnim-up"></div>
+                                            <div class="grid__item grid1__item--b gridItAnim gridItAnim-down"></div>
+                                            <div class="grid__item grid1__item--a gridItAnim gridItAnim-up"></div>
+                                            <div class="grid__item grid1__item--a gridItAnim gridItAnim-down"></div>
+                                            <div class="grid__item grid1__item--b gridItAnim gridItAnim-up"></div>
+                                            <div class="grid__item grid1__item--b gridItAnim gridItAnim-down"></div>
+                                            <div class="grid__item grid1__item--a gridItAnim gridItAnim-up"></div>
+                                        </div>
+                                        <div class="example__grid2">
+                                            <div class="grid__item grid2__item gridItAnim gridItAnim-right"></div>
+                                            <div class="grid__item grid2__item gridItAnim gridItAnim-down"></div>
+                                            <div class="grid__item grid2__item gridItAnim gridItAnim-right"></div>
+                                            <div class="grid__item grid2__item gridItAnim gridItAnim-up"></div>
+                                            <div class="grid__item grid2__item gridItAnim gridItAnim-up"></div>
+                                            <div class="grid__item grid2__item gridItAnim gridItAnim-left"></div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="front-examples-item s_transparent_box blur">
+                                    <div>
+                                        <h2>Web Services integrations</h2>
+                                        <p>With JavaScript I can obtain and integrate to my project the information provided by
+                                            a third party API. As an example, here I obtain information about countries affected
+                                            by COVID-19 through the <a href="https://covid19-api.com/" target="_blank">following
+                                                API</a>.</p>
+                                    </div>
+                                    <div class="item__panel-api" id="item__panel-api">
+                                        <div class="panelApi__table">
+                                            <table style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>País</th>
+                                                        <th>Último cambio</th>
+                                                        <th>Última actualización</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tbody-countriesTable">
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                        <th>Sample</th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="panelApi__tableInfo" id="tableInfo-countrySelected">
+                                            <p>Seleccione un país para obtener su información.</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </section>
+
+                            <section class="articles_container_A">
+                                <article class="s_transparent_box blur">
+                                    <h2>Knowledge</h2>
+                                    <p>I have solid knowledge in the 3 pillars of web programming: HTML, CSS and JavaScript.
+                                        I can make interesting or very specific styles and behaviors with vanilla
+                                        programming in CSS and JavaScript.</p>
+                                    <div class="techs_container">
+                                        <div class="tech_container">
+                                            <div class="icon_tech">
+                                                <div class="icon icon-react"></div>
+                                            </div>
+                                            <h3>HTML5</h3>
+                                        </div>
+                                        <div class="tech_container">
+                                            <div class="icon_tech">
+                                                <div class="icon icon-angular"></div>
+                                            </div>
+                                            <h3>CSS</h3>
+                                        </div>
+                                        <div class="tech_container">
+                                            <div class="icon_tech">
+                                                <div class="icon icon-sass"></div>
+                                            </div>
+                                            <h3>JavaScript</h3>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="s_transparent_box blur">
+                                    <h2>About Front Frameworks</h2>
+                                    <p>So far the kind of work experiences I've had didn't require a specific framework for
+                                        front end development (because other technologies are usually used to make video
+                                        game UI). I have practically no formal work experience using these frameworks but I
+                                        have given myself the freedom to try them and experiment a bit with them.</p>
+                                    <div class="techs_container">
+                                        <div class="tech_container">
+                                            <div class="icon_tech">
+                                                <div class="icon icon-react"></div>
+                                            </div>
+                                            <h3>React</h3>
+                                        </div>
+                                        <div class="tech_container">
+                                            <div class="icon_tech">
+                                                <div class="icon icon-angular"></div>
+                                            </div>
+                                            <h3>Angular</h3>
+                                        </div>
+
+                                        <div class="tech_container">
+                                            <div class="icon_tech">
+                                                <div class="icon icon-sass"></div>
+                                            </div>
+                                            <h3>Sass</h3>
+                                        </div>
+                                        <div class="tech_container">
+                                            <div class="icon_tech">
+                                                <div class="icon icon-sass"></div>
+                                            </div>
+                                            <h3>Tailwind</h3>
+                                        </div>
+                                        <div class="tech_container">
+                                            <div class="icon_tech">
+                                                <div class="icon icon-sass"></div>
+                                            </div>
+                                            <h3>Bootstrap</h3>
+                                        </div>
+
+                                    </div>
+                                </article>
+                            </section>
+
+                            <div class="btn-leftToCenter s_transparent_box blur" id="leftToCenterButton">
+                                <div class="effect-selector"></div>
+                                <div class="rightArrow"></div>
+                                <h2>Go back<br>home</h2>
                             </div>
-                            <div class="item-example">
-                                <div class="example__grid1">
-                                    <div class="grid__item grid1__item--a gridItAnim gridItAnim-down"></div>
-                                    <div class="grid__item grid1__item--b gridItAnim gridItAnim-up"></div>
-                                    <div class="grid__item grid1__item--b gridItAnim gridItAnim-down"></div>
-                                    <div class="grid__item grid1__item--a gridItAnim gridItAnim-up"></div>
-                                    <div class="grid__item grid1__item--a gridItAnim gridItAnim-down"></div>
-                                    <div class="grid__item grid1__item--b gridItAnim gridItAnim-up"></div>
-                                    <div class="grid__item grid1__item--b gridItAnim gridItAnim-down"></div>
-                                    <div class="grid__item grid1__item--a gridItAnim gridItAnim-up"></div>
-                                    <div class="grid__item grid1__item--a gridItAnim gridItAnim-down"></div>
-                                    <div class="grid__item grid1__item--b gridItAnim gridItAnim-up"></div>
-                                    <div class="grid__item grid1__item--b gridItAnim gridItAnim-down"></div>
-                                    <div class="grid__item grid1__item--a gridItAnim gridItAnim-up"></div>
-                                </div>
-                                <div class="example__grid2">
-                                    <div class="grid__item grid2__item gridItAnim gridItAnim-right"></div>
-                                    <div class="grid__item grid2__item gridItAnim gridItAnim-down"></div>
-                                    <div class="grid__item grid2__item gridItAnim gridItAnim-right"></div>
-                                    <div class="grid__item grid2__item gridItAnim gridItAnim-up"></div>
-                                    <div class="grid__item grid2__item gridItAnim gridItAnim-up"></div>
-                                    <div class="grid__item grid2__item gridItAnim gridItAnim-left"></div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="front-examples-item s-transparent-box blur">
-                            <div>
-                                <h2>Web Services integrations</h2>
-                                <p>With JavaScript I can obtain and integrate to my project the information provided by
-                                    a third party API. As an example, here I obtain information about countries affected
-                                    by COVID-19 through the <a href="https://covid19-api.com/" target="_blank">following
-                                        API</a>.</p>
-                            </div>
-                            <div class="item__panel-api" id="item__panel-api">
-                                <div class="panelApi__table">
-                                    <table style="width:100%">
-                                        <thead>
-                                            <tr>
-                                                <th>País</th>
-                                                <th>Último cambio</th>
-                                                <th>Última actualización</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="tbody-countriesTable">
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                                <th>Sample</th>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="panelApi__tableInfo" id="tableInfo-countrySelected">
-                                    <p>Seleccione un país para obtener su información.</p>
-                                </div>
-                            </div>
-                        </article>
-
-                        </section>
-
-                        <section class="knowledge">
-                            <article class="s-transparent-box blur">
-                                <h2>Knowledge</h2>
-                                <p>I have solid knowledge in the 3 pillars of web programming: HTML, CSS and JavaScript.
-                                    I can make interesting or very specific styles and behaviors with vanilla
-                                    programming in CSS and JavaScript.</p>
-                                <div class="techs_container">
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-react"></div>
-                                        </div>
-                                        <h3>HTML5</h3>
-                                    </div>
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-angular"></div>
-                                        </div>
-                                        <h3>CSS</h3>
-                                    </div>
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-sass"></div>
-                                        </div>
-                                        <h3>JavaScript</h3>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="s-transparent-box blur">
-                                <h2>About Front Frameworks</h2>
-                                <p>So far the kind of work experiences I've had didn't require a specific framework for
-                                    front end development (because other technologies are usually used to make video
-                                    game UI). I have practically no formal work experience using these frameworks but I
-                                    have given myself the freedom to try them and experiment a bit with them.</p>
-                                <div class="techs_container">
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-react"></div>
-                                        </div>
-                                        <h3>React</h3>
-                                    </div>
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-angular"></div>
-                                        </div>
-                                        <h3>Angular</h3>
-                                    </div>
-
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-sass"></div>
-                                        </div>
-                                        <h3>Sass</h3>
-                                    </div>
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-sass"></div>
-                                        </div>
-                                        <h3>Tailwind</h3>
-                                    </div>
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-sass"></div>
-                                        </div>
-                                        <h3>Bootstrap</h3>
-                                    </div>
-
-                                </div>
-                            </article>
-                        </section>
-
-                        <div class="btn-leftToCenter s-transparent-box blur" id="leftToCenterButton">
-                            <div class="effect-selector"></div>
-                            <div class="rightArrow"></div>
-                            <h2>Volver al<br>Home</h2>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--------------------------------------------------- FACE UP  -->
-            <div class="face up">
-                <div class="screen-body">
-                    <div class="dev-container">
+                <!--------------------------------------------------- FACE UP  -->
+                <div class="face up">
+                    <div class="face_body scroller_Y">
+                        <div class="flex_container_y">
 
-                        <div class="dev-knowledge">
+                            <div class="flex_container_x">
+                                <div class="scroller_Y" id="experience">
+                                    <section class="skills">
+                                        <article class="skill skill--left s_transparent_box">
+                                            <div class="skill__img-container">
+                                                <div class="skill__img git"></div>
+                                            </div>
+                                            <div class="skill__info">
+                                                <h2>Space Misfits</h2>
+                                                <p>Worked as Lead Game Developer</p>
+                                            </div>
+                                        </article>
+                                        <article class="skill skill--right s_transparent_box">
+                                            <div class="skill__img-container">
+                                                <div class="skill__img arq"></div>
+                                            </div>
+                                            <div class="skill__info">
+                                                <h2>Words With Friends 2</h2>
+                                                <p>Worked as Game Developer with Zynga</p>
+                                            </div>
+                                        </article>
+                                        <article class="skill skill--left s_transparent_box">
+                                            <div class="skill__img-container">
+                                                <div class="skill__img uml"></div>
+                                            </div>
+                                            <div class="skill__info">
+                                                <h2>We Need To Go Deeper</h2>
+                                                <p>Worked as Game Developer with 3OGS</p>
+                                            </div>
+                                        </article>
+                                        <article class="skill skill--right s_transparent_box">
+                                            <div class="skill__img-container">
+                                                <div class="skill__img postman"></div>
+                                            </div>
+                                            <div class="skill__info">
+                                                <h2>7 Angels</h2>
+                                                <p>Worked as Game Developer</p>
+                                            </div>
+                                        </article>
+                                        <article class="skill skill--left s_transparent_box">
+                                            <div class="skill__img-container">
+                                                <div class="skill__img regex"></div>
+                                            </div>
+                                            <div class="skill__info">
+                                                <h2>FUVR</h2>
+                                                <p>Worked as Game Developer</p>
+                                            </div>
+                                        </article>
+                                        <article class="skill skill--left s_transparent_box">
+                                            <div class="skill__img-container">
+                                                <div class="skill__img regex"></div>
+                                            </div>
+                                            <div class="skill__info">
+                                                <h2>Explorando los Derechos</h2>
+                                                <p>Worked as Game Developer</p>
+                                            </div>
+                                        </article>
+                                    </section>
+                                </div>
 
-                            <div class="scroller" id="experience">
-                                <section class="skills">
-                                    <article class="skill skill--left s-transparent-box">
-                                        <div class="skill__img-container">
-                                            <div class="skill__img git"></div>
-                                        </div>
-                                        <div class="skill__info">
-                                            <h2>Space Misfits</h2>
-                                            <p>Worked as Lead Game Developer</p>
-                                        </div>
-                                    </article>
-                                    <article class="skill skill--right s-transparent-box">
-                                        <div class="skill__img-container">
-                                            <div class="skill__img arq"></div>
-                                        </div>
-                                        <div class="skill__info">
-                                            <h2>Words With Friends 2</h2>
-                                            <p>Worked as Game Developer with Zynga</p>
-                                        </div>
-                                    </article>
-                                    <article class="skill skill--left s-transparent-box">
-                                        <div class="skill__img-container">
-                                            <div class="skill__img uml"></div>
-                                        </div>
-                                        <div class="skill__info">
-                                            <h2>We Need To Go Deeper</h2>
-                                            <p>Worked as Game Developer with 3OGS</p>
+                                <section class="articles_container_A">
+                                    <article class="s_transparent_box blur">
+                                        <h2>My Stack</h2>
+                                        <p>Por el momento me enfoco principalmente en... Por su relación a lo que
+                                            normalmente
+                                            necesito como Game Developer</p>
+                                        <div class="techs_container">
+                                            <div class="tech_container">
+                                                <div class="icon_tech">
+                                                    <div class="icon icon-react"></div>
+                                                </div>
+                                                <h3>Photon & Mirror</h3>
+                                            </div>
+                                            <div class="tech_container">
+                                                <div class="icon_tech">
+                                                    <div class="icon icon-react"></div>
+                                                </div>
+                                                <h3>VFX & ShaderLab</h3>
+                                            </div>
+                                            <div class="tech_container">
+                                                <div class="icon_tech">
+                                                    <div class="icon icon-react"></div>
+                                                </div>
+                                                <h3>Multiplatform?</h3>
+                                            </div>
                                         </div>
                                     </article>
-                                    <article class="skill skill--right s-transparent-box">
-                                        <div class="skill__img-container">
-                                            <div class="skill__img postman"></div>
-                                        </div>
-                                        <div class="skill__info">
-                                            <h2>7 Angels</h2>
-                                            <p>Worked as Game Developer</p>
-                                        </div>
-                                    </article>
-                                    <article class="skill skill--left s-transparent-box">
-                                        <div class="skill__img-container">
-                                            <div class="skill__img regex"></div>
-                                        </div>
-                                        <div class="skill__info">
-                                            <h2>FUVR</h2>
-                                            <p>Worked as Game Developer</p>
-                                        </div>
-                                    </article>
-                                    <article class="skill skill--left s-transparent-box">
-                                        <div class="skill__img-container">
-                                            <div class="skill__img regex"></div>
-                                        </div>
-                                        <div class="skill__info">
-                                            <h2>Explorando los Derechos</h2>
-                                            <p>Worked as Game Developer</p>
+
+                                    <article class="s_transparent_box blur">
+                                        <h2>About my experience</h2>
+                                        <p>So far I have only had one formal work experience as a Back End developer. In
+                                            that
+                                            experience I worked implementing REST endpoints, connections to third party REST
+                                            and
+                                            SOAPxml web services, automation, database updates and bugfixing.</p>
+                                        <div class="techs_container">
+                                            <div class="tech_container">
+                                                <div class="icon_tech">
+                                                    <div class="icon icon-react"></div>
+                                                </div>
+                                                <h3>MySQL</h3>
+                                            </div>
+                                            <div class="tech_container">
+                                                <div class="icon_tech">
+                                                    <div class="icon icon-angular"></div>
+                                                </div>
+                                                <h3>.NET</h3>
+                                            </div>
                                         </div>
                                     </article>
                                 </section>
                             </div>
 
-                            <section class="knowledge">
-                                <article class="s-transparent-box blur">
+                            <div class="btn-upToCenter s_transparent_box">
+                                <div class="effect-selector" id="upToCenterButton"></div>
+                                <h2>Go back home</h2>
+                                <div class="downArrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--------------------------------------------------- FACE DOWN  -->
+                <div class="face down">
+                    <div class="face_body scroller_Y">
+                        <div class="flex_container_y">
+
+                            <div class="btn-downToCenter s_transparent_box" id="downToCenterButton">
+                                <div class="effect-selector"></div>
+                                <div class="upArrow"></div>
+                                <h2>Go back home</h2>
+                            </div>
+                            <div class="flex_container_x">
+
+                                <section class="articles_container_A">
+                                    <article class="s_transparent_box blur">
+                                        <h2>Hobbies</h2>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem aliquam nostrum
+                                            alias blanditiis, vel placeat voluptas? Quis, eum rem non facere tempore porro
+                                            tenetur tempora quia, laborum quibusdam et, aliquid ex fugiat mollitia veritatis
+                                            maxime! Veritatis cum illum nihil laborum, enim molestiae provident.
+                                            Voluptatibus repudiandae harum impedit sequi in accusantium.</p>
+                                    </article>
+                                    <article class="s_transparent_box blur">
+                                        <h2>Favorite videogames</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eaque et
+                                            assumenda explicabo quibusdam, corrupti, minima modi possimus quas expedita odio
+                                            veniam mollitia officiis nihil. Consectetur sequi numquam, perspiciatis harum
+                                            dolor ipsum placeat labore magni dolorum incidunt dolore error corrupti ipsa non
+                                            hic laudantium nihil at ab? Distinctio, dolor totam.</p>
+                                    </article>
+
+                                    <article class="s_transparent_box blur">
+                                        <h2>Personal Goals</h2>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit
+                                            debitis corrupti delectus saepe eaque, magnam blanditiis quos eum modi harum ab
+                                            soluta in, itaque beatae nobis? Totam corrupti reprehenderit nobis voluptates
+                                            fugit ipsa dolor voluptas. Fuga possimus velit, beatae impedit soluta tempora,
+                                            rerum sit doloribus, consectetur omnis sequi. Illum?</p>
+                                    </article>
+                                </section>
+
+                                <section class="samples_container backend">
+                                    <article class="backend_frameworks s_transparent_box blur">
+                                        <div class="item-description">
+                                            <h2>Some art & design knowledge</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vero
+                                                eius. Eius quas placeat totam doloribus, quasi, ipsam corrupti expedita est
+                                                blanditiis, tenetur mollitia vel. Cum et repellat, molestias, necessitatibus
+                                                libero voluptates culpa harum voluptatem quo consectetur, veniam dolores
+                                                laudantium dolore. Porro earum itaque odit dignissimos in, consectetur unde.
+                                                Molestiae quibusdam, ex quas tenetur accusamus nisi quos nulla, rem, id
+                                                facere iure accusantium culpa in! Quas, dolore? Illo, possimus. Minus
+                                                necessitatibus fugiat error sunt reprehenderit facilis mollitia deleniti
+                                                possimus laudantium sapiente corrupti eaque modi rerum soluta dolorum quae
+                                                voluptatibus dolorem sit vel, accusantium dignissimos velit nostrum!
+                                                Laudantium quibusdam saepe, culpa, rem deserunt totam provident voluptatem
+                                                repellat labore, reprehenderit quae expedita? Nihil facilis itaque aut
+                                                mollitia, rerum repellat possimus assumenda, porro veritatis quisquam sequi
+                                                dignissimos amet quaerat ut magni fugiat dolores eligendi cum maxime error
+                                                fugit. Quisquam similique at ad temporibus, nobis itaque quas a eaque labore
+                                                dolore sapiente omnis enim beatae sit, porro alias assumenda esse dicta quod
+                                                nam exercitationem tempora? Laboriosam quisquam doloribus, unde qui ad
+                                                necessitatibus, quis voluptas eius fugiat omnis expedita odio reprehenderit
+                                                laudantium nesciunt facere enim optio dolore laborum repudiandae, accusamus
+                                                eligendi! Nihil magnam quisquam dolores neque voluptates laboriosam sunt
+                                                dolor similique consequuntur corrupti magni eos laborum, quod delectus illo
+                                                qui atque totam! Accusantium possimus odio modi natus, ratione veniam sint,
+                                                nam maiores eos molestiae inventore. Expedita, iure excepturi ipsam, illum
+                                                tempore at ratione voluptas doloremque consequatur temporibus quasi velit
+                                                aliquam delectus perspiciatis molestiae beatae incidunt est? Ratione
+                                                quisquam, totam voluptate dolores explicabo laudantium numquam sapiente?</p>
+                                    </article>
+                                </section>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--------------------------------------------------- FACE RIGHT  -->
+                <div class="face right">
+                    <div class="face_body scroller_Y">
+                        <div class="flex_container_x">
+
+                            <div class="btn-rightToCenter s_transparent_box blur" id="rightToCenterButton">
+                                <div class="effect-selector"></div>
+                                <div class="leftArrow"></div>
+                                <h2>Go back<br>home</h2>
+                            </div>
+
+                            <section class="articles_container_A">
+                                <article class="s_transparent_box blur">
                                     <h2>My Stack</h2>
-                                    <p>Por el momento me enfoco principalmente en... Por su relación a lo que
-                                        normalmente
+                                    <p>Por el momento me enfoco principalmente en... Por su relación a lo que normalmente
                                         necesito como Game Developer</p>
                                     <div class="techs_container">
                                         <div class="tech_container">
                                             <div class="icon_tech">
                                                 <div class="icon icon-react"></div>
                                             </div>
-                                            <h3>Photon & Mirror</h3>
+                                            <h3>.NET</h3>
                                         </div>
                                         <div class="tech_container">
                                             <div class="icon_tech">
                                                 <div class="icon icon-react"></div>
                                             </div>
-                                            <h3>VFX & ShaderLab</h3>
+                                            <h3>Azure</h3>
                                         </div>
                                         <div class="tech_container">
                                             <div class="icon_tech">
                                                 <div class="icon icon-react"></div>
                                             </div>
-                                            <h3>Multiplatform?</h3>
+                                            <h3>PlayFab</h3>
+                                        </div>
+                                        <div class="tech_container">
+                                            <div class="icon_tech">
+                                                <div class="icon icon-react"></div>
+                                            </div>
+                                            <h3>UnityCloud</h3>
                                         </div>
                                     </div>
                                 </article>
 
-                                <article class="s-transparent-box blur">
+                                <article class="s_transparent_box blur">
                                     <h2>About my experience</h2>
-                                    <p>So far I have only had one formal work experience as a Back End developer. In
-                                        that
-                                        experience I worked implementing REST endpoints, connections to third party REST
-                                        and
-                                        SOAPxml web services, automation, database updates and bugfixing.</p>
+                                    <p>So far I have only had one formal work experience as a Back End developer. In that experience I worked implementing REST endpoints, connections to third party REST and SOAPxml web services, automation, database updates and bugfixing.</p>
                                     <div class="techs_container">
                                         <div class="tech_container">
                                             <div class="icon_tech">
@@ -445,239 +595,117 @@
                                 </article>
                             </section>
 
-                        </div>
-
-                        <div class="btn-upToCenter s-transparent-box">
-                            <div class="effect-selector" id="upToCenterButton"></div>
-                            <h2>Volver al Home</h2>
-                            <div class="downArrow"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--------------------------------------------------- FACE DOWN  -->
-            <div class="face down">
-                <div class="screen-body">
-                    <div class="dev-container">
-
-                        <div class="btn-downToCenter s-transparent-box" id="downToCenterButton">
-                            <div class="effect-selector"></div>
-                            <div class="upArrow"></div>
-                            <h2>Volver al Home</h2>||
-                        </div>
-                        <div class="dev-knowledge">
-
-                            <section class="knowledge">
-                                <article class="s-transparent-box blur">
-                                    <h2>Hobbies</h2>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem aliquam nostrum alias blanditiis, vel placeat voluptas? Quis, eum rem non facere tempore porro tenetur tempora quia, laborum quibusdam et, aliquid ex fugiat mollitia veritatis maxime! Veritatis cum illum nihil laborum, enim molestiae provident. Voluptatibus repudiandae harum impedit sequi in accusantium.</p>
-                                </article>
-                                <article class="s-transparent-box blur">
-                                    <h2>Favorite videogames</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eaque et assumenda explicabo quibusdam, corrupti, minima modi possimus quas expedita odio veniam mollitia officiis nihil. Consectetur sequi numquam, perspiciatis harum dolor ipsum placeat labore magni dolorum incidunt dolore error corrupti ipsa non hic laudantium nihil at ab? Distinctio, dolor totam.</p>
-                                </article>
-
-                                <article class="s-transparent-box blur">
-                                    <h2>Personal Goals</h2>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit debitis corrupti delectus saepe eaque, magnam blanditiis quos eum modi harum ab soluta in, itaque beatae nobis? Totam corrupti reprehenderit nobis voluptates fugit ipsa dolor voluptas. Fuga possimus velit, beatae impedit soluta tempora, rerum sit doloribus, consectetur omnis sequi. Illum?</p>
-                                </article>
-                            </section>
-
                             <section class="samples_container backend">
-                                <article class="backend_frameworks s-transparent-box blur">
+                                <article class="backend_frameworks s_transparent_box blur">
                                     <div class="item-description">
-                                        <h2>Some art & design knowledge</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vero eius. Eius quas placeat totam doloribus, quasi, ipsam corrupti expedita est blanditiis, tenetur mollitia vel. Cum et repellat, molestias, necessitatibus libero voluptates culpa harum voluptatem quo consectetur, veniam dolores laudantium dolore. Porro earum itaque odit dignissimos in, consectetur unde. Molestiae quibusdam, ex quas tenetur accusamus nisi quos nulla, rem, id facere iure accusantium culpa in! Quas, dolore? Illo, possimus. Minus necessitatibus fugiat error sunt reprehenderit facilis mollitia deleniti possimus laudantium sapiente corrupti eaque modi rerum soluta dolorum quae voluptatibus dolorem sit vel, accusantium dignissimos velit nostrum! Laudantium quibusdam saepe, culpa, rem deserunt totam provident voluptatem repellat labore, reprehenderit quae expedita? Nihil facilis itaque aut mollitia, rerum repellat possimus assumenda, porro veritatis quisquam sequi dignissimos amet quaerat ut magni fugiat dolores eligendi cum maxime error fugit. Quisquam similique at ad temporibus, nobis itaque quas a eaque labore dolore sapiente omnis enim beatae sit, porro alias assumenda esse dicta quod nam exercitationem tempora? Laboriosam quisquam doloribus, unde qui ad necessitatibus, quis voluptas eius fugiat omnis expedita odio reprehenderit laudantium nesciunt facere enim optio dolore laborum repudiandae, accusamus eligendi! Nihil magnam quisquam dolores neque voluptates laboriosam sunt dolor similique consequuntur corrupti magni eos laborum, quod delectus illo qui atque totam! Accusantium possimus odio modi natus, ratione veniam sint, nam maiores eos molestiae inventore. Expedita, iure excepturi ipsam, illum tempore at ratione voluptas doloremque consequatur temporibus quasi velit aliquam delectus perspiciatis molestiae beatae incidunt est? Ratione quisquam, totam voluptate dolores explicabo laudantium numquam sapiente?</p>
+                                        <h2>Experience with other frameworks</h2>
+                                        <p>Although my only formal backed work experience was using .NET, I have explored other languages and their frameworks in my personal time. In each of these I have developed at least one simple API.</p>
+                                    </div>
+                                    <div class="framework_pairs_container">
+                                        <div class="frameworkpair">
+                                            <div class="tech_container">
+                                                <div class="icon_tech">
+                                                    <div class="icon icon-react"></div>
+                                                </div>
+                                                <h3>PHP</h3>
+                                            </div>
+                                            <span>+</span>
+                                            <div class="tech_container">
+                                                <div class="icon_tech">
+                                                    <div class="icon icon-angular"></div>
+                                                </div>
+                                                <h3>Larabel</h3>
+                                            </div>
+                                        </div>
+                                        <div class="frameworkpair">
+                                            <div class="tech_container">
+                                                <div class="icon_tech">
+                                                    <div class="icon icon-react"></div>
+                                                </div>
+                                                <h3>PHP</h3>
+                                            </div>
+                                            <span>+</span>
+                                            <div class="tech_container">
+                                                <div class="icon_tech">
+                                                    <div class="icon icon-angular"></div>
+                                                </div>
+                                                <h3>Larabel</h3>
+                                            </div>
+                                        </div>
+                                        <div class="frameworkpair">
+                                            <div class="tech_container">
+                                                <div class="icon_tech">
+                                                    <div class="icon icon-react"></div>
+                                                </div>
+                                                <h3>PHP</h3>
+                                            </div>
+                                            <span>+</span>
+                                            <div class="tech_container">
+                                                <div class="icon_tech">
+                                                    <div class="icon icon-angular"></div>
+                                                </div>
+                                                <h3>Larabel</h3>
+                                            </div>
+                                        </div>
+                                        <div class="frameworkpair">
+                                            <div class="tech_container">
+                                                <div class="icon_tech">
+                                                    <div class="icon icon-react"></div>
+                                                </div>
+                                                <h3>PHP</h3>
+                                            </div>
+                                            <span>+</span>
+                                            <div class="tech_container">
+                                                <div class="icon_tech">
+                                                    <div class="icon icon-angular"></div>
+                                                </div>
+                                                <h3>Larabel</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="s_transparent_box blur">
+                                    <div class="item-description">
+                                        <h2>Other technologies</h2>
+                                        <p>I have done simple experiments and applications with these storage tools, although I have not yet required them in my previous work experience.</p>
+                                    </div>
+                                    <div class="techs_container">
+                                        <div class="tech_container">
+                                            <div class="icon_tech">
+                                                <div class="icon icon-react"></div>
+                                            </div>
+                                            <h3>PostgreSQL</h3>
+                                        </div>
+                                        <div class="tech_container">
+                                            <div class="icon_tech">
+                                                <div class="icon icon-react"></div>
+                                            </div>
+                                            <h3>MongoDB</h3>
+                                        </div>
+                                        <div class="tech_container">
+                                            <div class="icon_tech">
+                                                <div class="icon icon-react"></div>
+                                            </div>
+                                            <h3>Firestore</h3>
+                                        </div>
+                                        <div class="tech_container">
+                                            <div class="icon_tech">
+                                                <div class="icon icon-react"></div>
+                                            </div>
+                                            <h3>UnityCloud</h3>
+                                        </div>
+                                    </div>
                                 </article>
                             </section>
 
                         </div>
-
-                    </div>
-                </div>
-            </div>
-            <!--------------------------------------------------- FACE RIGHT  -->
-            <div class="face right">
-                <div class="screen-body">
-                    <div class="flex_container">
-
-                        <div class="btn-rightToCenter s-transparent-box blur" id="rightToCenterButton">
-                            <div class="effect-selector"></div>
-                            <div class="leftArrow"></div>
-                            <h2>Volver al<br>Home</h2>
-                        </div>
-
-                        <section class="knowledge">
-                            <article class="s-transparent-box blur">
-                                <h2>My Stack</h2>
-                                <p>Por el momento me enfoco principalmente en... Por su relación a lo que normalmente
-                                    necesito como Game Developer</p>
-                                <div class="techs_container">
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-react"></div>
-                                        </div>
-                                        <h3>.NET</h3>
-                                    </div>
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-react"></div>
-                                        </div>
-                                        <h3>Azure</h3>
-                                    </div>
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-react"></div>
-                                        </div>
-                                        <h3>PlayFab</h3>
-                                    </div>
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-react"></div>
-                                        </div>
-                                        <h3>UnityCloud</h3>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="s-transparent-box blur">
-                                <h2>About my experience</h2>
-                                <p>So far I have only had one formal work experience as a Back End developer. In that
-                                    experience I worked implementing REST endpoints, connections to third party REST and
-                                    SOAPxml web services, automation, database updates and bugfixing.</p>
-                                <div class="techs_container">
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-react"></div>
-                                        </div>
-                                        <h3>MySQL</h3>
-                                    </div>
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-angular"></div>
-                                        </div>
-                                        <h3>.NET</h3>
-                                    </div>
-                                </div>
-                            </article>
-                        </section>
-
-                        <section class="samples_container backend">
-                            <article class="backend_frameworks s-transparent-box blur">
-                                <div class="item-description">
-                                    <h2>Experiencia con otros frameworks</h2>
-                                    <p>Aunque mi única experiencia laboral formal en backed fue usando .NET, he
-                                        explorado otros
-                                        lenguajes y sus frameworks en mi tiempo personal. En cada uno de estos he
-                                        desarrollado
-                                        por lo menos una API sencilla.</p>
-                                </div>
-                                <div class="framework_pairs_container">
-                                    <div class="frameworkpair">
-                                        <div class="tech_container">
-                                            <div class="icon_tech">
-                                                <div class="icon icon-react"></div>
-                                            </div>
-                                            <h3>PHP</h3>
-                                        </div>
-                                        <span>+</span>
-                                        <div class="tech_container">
-                                            <div class="icon_tech">
-                                                <div class="icon icon-angular"></div>
-                                            </div>
-                                            <h3>Larabel</h3>
-                                        </div>
-                                    </div>
-                                    <div class="frameworkpair">
-                                        <div class="tech_container">
-                                            <div class="icon_tech">
-                                                <div class="icon icon-react"></div>
-                                            </div>
-                                            <h3>PHP</h3>
-                                        </div>
-                                        <span>+</span>
-                                        <div class="tech_container">
-                                            <div class="icon_tech">
-                                                <div class="icon icon-angular"></div>
-                                            </div>
-                                            <h3>Larabel</h3>
-                                        </div>
-                                    </div>
-                                    <div class="frameworkpair">
-                                        <div class="tech_container">
-                                            <div class="icon_tech">
-                                                <div class="icon icon-react"></div>
-                                            </div>
-                                            <h3>PHP</h3>
-                                        </div>
-                                        <span>+</span>
-                                        <div class="tech_container">
-                                            <div class="icon_tech">
-                                                <div class="icon icon-angular"></div>
-                                            </div>
-                                            <h3>Larabel</h3>
-                                        </div>
-                                    </div>
-                                    <div class="frameworkpair">
-                                        <div class="tech_container">
-                                            <div class="icon_tech">
-                                                <div class="icon icon-react"></div>
-                                            </div>
-                                            <h3>PHP</h3>
-                                        </div>
-                                        <span>+</span>
-                                        <div class="tech_container">
-                                            <div class="icon_tech">
-                                                <div class="icon icon-angular"></div>
-                                            </div>
-                                            <h3>Larabel</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="s-transparent-box blur">
-                                <div class="item-description">
-                                    <h2>Otras experiencias</h2>
-                                    <p>´He he hecho aplicaciones sencillas con estas herramientas de almacenamiento,
-                                        aunque todavía no las he requerido en mis previas experiencias laborales</p>
-                                </div>
-                                <div class="techs_container">
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-react"></div>
-                                        </div>
-                                        <h3>PostgreSQL</h3>
-                                    </div>
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-react"></div>
-                                        </div>
-                                        <h3>MongoDB</h3>
-                                    </div>
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-react"></div>
-                                        </div>
-                                        <h3>Firestore</h3>
-                                    </div>
-                                    <div class="tech_container">
-                                        <div class="icon_tech">
-                                            <div class="icon icon-react"></div>
-                                        </div>
-                                        <h3>UnityCloud</h3>
-                                    </div>
-                                </div>
-                            </article>
-                        </section>
-
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <div>
-        <video id="video" loop autoplay preload muted>
+        <video id="background_video" loop autoplay preload muted>
             <source src="imgs/video-background.mp4" type='video/mp4' />
         </video>
     </div>
