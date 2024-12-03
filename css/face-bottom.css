@@ -26,4 +26,23 @@
     height: 30px;
     margin-top: 0.5em;
     transform: rotate(-90deg);
+} 
+
+#art_container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#art_container img {
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+}
+
+.w10 {
+    width: 10rem;
+}
+
+.w20 {
+    width: 15rem;
 }

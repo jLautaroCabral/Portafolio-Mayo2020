@@ -11,9 +11,9 @@
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    width: 70%;
+    width: 100%;
     margin: 2rem auto;
-    gap: 1.2rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 .tech_container {
@@ -21,11 +21,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    width: 8rem;
 }
 .tech_container h3{
-    font-size: 0.9em;
-    margin-top: 0.3em;
+    font-size: 1rem;
 }
 
 .icon_tech {
@@ -33,9 +32,11 @@
     height: 4rem;
     background-color: black;
     border-radius: 50%;
+    padding: 0.5rem;
+    overflow: hidden;
 }
 .icon_tech--sm {
-    padding: 0.6em;
+    padding: 0.5rem;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -48,13 +49,13 @@
     height: 100%;
 }
 .icon-react {
-    background-image: url(../imgs/file_type_reactjs_icon_130205.png);
+    background-image: url(../imgs/react.png);
 }
 .icon-angular {
-    background-image: url(../imgs/file_type_angular_icon_130754.png);
+    background-image: url(../imgs/angular.png);
 }
 .icon-sass {
-    background-image: url(../imgs/file_type_sass_icon_130182.png);
+    background-image: url(../imgs/sass.png);
 }
 .icon-responsive {
     background-image: url(../imgs/responsive-design.png);
@@ -113,17 +114,7 @@
     height: 48%;
     flex-direction: column;
 }
-.item-description {
-    box-sizing: border-box;
-    margin-bottom: 2rem;
-    width: 63%;
-}
-.item-description h2 {
-    margin-bottom: 0.3em;
-}
-.item-description a {
-    color: var(--white);
-}
+
 .item-example {
     width: 40%;
     display: flex;

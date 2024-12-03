@@ -78,12 +78,24 @@ section {
 }
 .articles_container_A h1 {
     font-size: 2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.3rem;
 }
 .articles_container_A h2 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
 }
 .articles_container_A a {
     color: #273b47;
+}
+
+.item-description {
+    box-sizing: border-box;
+    
+    width: 63%;
+}
+.item-description h2 {
+
+}
+.item-description a {
+    color: var(--white);
 }
