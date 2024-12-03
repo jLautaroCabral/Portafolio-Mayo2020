@@ -1,0 +1,144 @@
+
+
+.other {
+    width: 100%;
+    height: 100%;
+}
+.other-csharp {
+    grid-area: c;
+    display: flex;
+    box-sizing: border-box;
+}
+.other-java {
+    grid-area: j;
+    display: flex;
+}
+.other__title {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+}
+.other__title h1 {
+    display: block;
+    font-size: 8em;
+}
+.other__info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2em;
+    height: 100%;
+    width: 65%;
+    border-radius: 0 0 5% 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.5) 100%);
+    text-shadow: 0px 1px 1px #1b262c;
+    font-weight: 600;
+}
+.other__info p {
+    font-size: 1.5em;
+}
+
+
+.info__header {
+    margin-top: 5em;
+}
+.info__header h1 {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+}
+.info__example {
+    display: flex;
+    height: 40%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info__example--program {
+    display: flex;
+    height: 40%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info__footer {
+    margin-top: 4em;
+    background-color: rgba(10, 10, 10, 0.534);
+    border-radius: 1em;
+    height: 14%;
+    padding: 1em;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.info__footer h1 {
+    font-size: 1.82em;
+    margin-bottom: 0.5em;
+}
+
+.example__game {
+    width: 18em;
+    height:18em;
+    border-radius: 2em;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+.example__game:nth-child(1) {
+    background-image: url(../imgs/super-cutre-bird.png);
+}
+.example__game:nth-child(2) {
+    background-image: url(../imgs/freefall\ light.png);
+}
+.game__title {
+    width: 100%;
+    height: 18%;
+    font-size: 1.2em;
+    background: rgba(12, 11, 11, 0.856);
+    text-align: center;
+    padding-top: 0.5em;   
+}
+.example__program {
+    width: 38em;
+    height:24em;
+    border-radius: 2em;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-image: url(../imgs/inmo.png);
+}
+.program__title {
+    width: 100%;
+    height: 13%;
+    font-size: 1.2em;
+    background: rgba(12, 11, 11, 0.856);
+    text-align: center;
+    padding-top: 0.5em;   
+}
+.grid-container--facedown {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    grid-template: 10% 1fr / 1fr 1fr;
+    grid-template-areas: "b b"
+                         "c j";
+    box-sizing: border-box;
+    grid-gap: 1em;
+    font-size: 0.8em;
+}
