@@ -46,7 +46,10 @@
     flex-direction: column;
 }
 .framework_pairs_container {
-
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 .samples_container.backend .item-description {
     width: auto;
@@ -56,14 +59,17 @@
 .frameworkpair {
     display: flex;
     flex-direction: row;
-    
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 3rem;
 }
 .frameworkpair span {
     font-size: 3rem;
     text-align: center;
+}
+.frameworkpair .tech_container {
+    flex-direction: row;
+    width: 20rem;
+    justify-content: space-evenly;
 }
 
 .leftArrow {

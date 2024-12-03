@@ -28,21 +28,29 @@
     transform: rotate(-90deg);
 } 
 
-#art_container {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-#art_container img {
-    height: auto;
-    aspect-ratio: auto;
-    object-fit: contain;
-}
-
 .w10 {
     width: 10rem;
 }
 
-.w20 {
+.w15 {
     width: 15rem;
 }
+
+.art_container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 0.3rem;
+    align-items: center;
+}
+
+.art_container figure {
+    margin: 0;
+}
+
+.art_container img {
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    border-radius: 2rem;
+}
+
