@@ -48,47 +48,6 @@
     width: 100%;
     height: 100%;
 }
-.icon-react {
-    background-image: url(../imgs/react.png);
-}
-.icon-angular {
-    background-image: url(../imgs/angular.png);
-}
-.icon-sass {
-    background-image: url(../imgs/sass.png);
-}
-.icon-responsive {
-    background-image: url(../imgs/responsive-design.png);
-}
-.icon-jquery {
-    background-image: url(../imgs/jquery.png);
-}
-.icon-asinc {
-    background-image: url(../imgs/js.png);
-}
-
-.btn-leftToCenter {
-    cursor: pointer;
-    width: 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-    transition-duration: 1s;
-    font-size: 0.8em;
-}
-
-.rightArrow {
-    background-image: url('../imgs/left-and-right-arrows.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 4.2em;
-    height: 4.2em;
-    margin-bottom: 1em;
-}
 
 .fadeOut {
     opacity: 0;
