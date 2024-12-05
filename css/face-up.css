@@ -9,19 +9,16 @@
     box-sizing: border-box;
 }
 
-
-
-
-#faceUpContent {
+#gamedev_container {
     height: 87%;
 }
 
-#faceUpContent #experience_section {
+#experience_section {
     width: 60%;
     height: 100%;
 }
 
-#faceUpContent #knowledge {
+#knowledge {
     box-sizing: content-box;
     gap: 1rem;
 }
@@ -91,4 +88,54 @@
 
 .btn-upToCenter:hover {
     opacity: 1;
+}
+
+@media screen
+and (max-width: 500px) {
+    #gamedev_container {
+        flex-direction: column;
+        overflow: auto;
+    }
+    #experience_section {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        box-sizing: content-box;
+        overflow: visible;
+    }
+    #experience_container {
+        width: 100%;
+    }
+
+    #experience_section section {
+        width: 100%;
+        height: auto;
+    }
+    .experience--left {
+        grid-column: 1 / 4;
+    }
+    .experience--right {
+        grid-column: 1 / 4;
+    }
+    #knowledge {
+        order: -1;
+        width: 100%;
+        height: auto;
+        box-sizing: content-box;
+        overflow: visible;
+    }
+
+    #knowledge article {
+        width: 100%;
+        height: auto;
+        box-sizing: content-box;
+        padding: 0;
+    }
+
+    #leftToCenterButton {
+        order: -1;
+        width: 100%;
+        height: 10%;
+        flex-direction: row-reverse;
+    }
 }

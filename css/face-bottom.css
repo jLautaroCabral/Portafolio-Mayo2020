@@ -54,3 +54,16 @@
     border-radius: 2rem;
 }
 
+
+@media screen
+and (max-width: 500px) {
+
+    #extra_container {
+        flex-direction: column-reverse;
+    }
+    #extra_container section {
+        width: 100%;
+        box-sizing: content-box;
+        height: auto;
+    }
+}
