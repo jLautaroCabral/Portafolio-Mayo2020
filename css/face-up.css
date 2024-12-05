@@ -132,8 +132,7 @@ and (max-width: 500px) {
         padding: 0;
     }
 
-    #leftToCenterButton {
-        order: -1;
+    #upToCenterButton {
         width: 100%;
         height: 10%;
         flex-direction: row-reverse;

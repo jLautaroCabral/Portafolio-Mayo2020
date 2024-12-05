@@ -178,8 +178,20 @@ and (max-height: 800px) {
 
 @media screen
 and (max-width: 500px) {
-    .face_body {
-        padding: 0.6rem;
+    .area {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 100%;
+    }
+    .area h1 {
+        display: inline-block;
+        width: 50%;
+    }
+    .area__img {
+        width: 8rem;
+        height: 8rem;
+        margin-bottom: 0;
     }
     .hero {
         margin: 2rem 0;
@@ -212,18 +224,17 @@ and (max-width: 500px) {
         will-change: auto;
         transform-style: flat;
         transform: none;
-        height: 50%;
+        height: auto;
         width: 100%;
     }
-    
 
     .column.column__left,
     .column.column__right,
     .column.column__center
     {
-        height: 50%;
         width: 100%;
-        transform: none;
+        height: auto;
+        transform: none;   
     }
 
     .column.column__center {
@@ -231,9 +242,8 @@ and (max-width: 500px) {
     }
     
     .column.column__bottom {
-        width: 100%;
-        height: 20%;
         margin: 0;
+        width: 100%;
         transform: none;
     }
 

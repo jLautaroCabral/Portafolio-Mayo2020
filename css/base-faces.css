@@ -74,7 +74,7 @@
     transform: scale(3);
 }
 
-.back_button_x {
+.back_button {
     cursor: pointer;
     width: 8%;
     display: flex;
@@ -85,6 +85,9 @@
     position: relative;
     transition-duration: 1s;
     font-size: 0.8rem;
+}
+.back_button h2 {
+    margin: 0 0.4rem;
 }
 
 .x_arrow {
@@ -107,6 +110,9 @@
 
 @media screen
 and (max-width: 500px) {
+    .face_body {
+        padding-bottom: 6rem;
+    }
     #background_video {
         position: absolute;
         height: 100vh;

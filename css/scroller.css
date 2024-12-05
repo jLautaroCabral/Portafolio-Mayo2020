@@ -1,13 +1,21 @@
 .scroller_Y::-webkit-scrollbar {
+    overflow-x: hidden;
+    overflow-y: auto;
     width: 0.8rem;
 }
 .scroller_Y::-moz-scrollbar {
+    overflow-x: hidden;
+    overflow-y: auto;
     width: 0.8rem;
 }
 .scroller_Y::-ms-scrollbar {
+    overflow-x: hidden;
+    overflow-y: auto;
     width: 0.8rem;
 }
 .scroller_Y::-o-scrollbar {
+    overflow-x: hidden;
+    overflow-y: auto;
     width: 0.8rem;
 }
 .scroller_Y::-webkit-scrollbar-thumb {
