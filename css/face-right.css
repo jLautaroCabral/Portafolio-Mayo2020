@@ -32,8 +32,6 @@
 }
 
 
-
-
 .samples_container.backend {
     display: flex;
     flex-direction: column;
@@ -82,8 +80,35 @@
     height: 4.2em;
     margin-bottom: 1em;
 }
-
-
 .btn-rightToCenter:hover {
     opacity: 1;
+}
+
+
+@media screen
+and (max-width: 500px) {
+    #backend_container {
+        flex-direction: column;
+    }
+    #backend_sections {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        box-sizing: content-box;
+    }
+    #backend_sections section {
+        width: 100%;
+        height: auto;
+        box-sizing: content-box;
+    }
+    #backend_sections .articles_container_A {
+        order: -1;
+    }
+
+    #rightToCenterButton {
+        order: -1;
+        width: 100%;
+        height: 10%;
+        flex-direction: row;
+    }
 }
