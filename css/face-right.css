@@ -90,7 +90,6 @@ and (max-width: 500px) {
         flex-direction: column;
         width: 100%;
         height: 87%;
-        box-sizing: content-box;
         gap: 2rem;
     }
     #backend_sections section {
