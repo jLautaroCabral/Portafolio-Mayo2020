@@ -89,8 +89,9 @@ and (max-width: 500px) {
     #backend_sections {
         flex-direction: column;
         width: 100%;
-        height: auto;
+        height: 87%;
         box-sizing: content-box;
+        gap: 2rem;
     }
     #backend_sections section {
         width: 100%;
@@ -109,7 +110,7 @@ and (max-width: 500px) {
     }
     
     .leftArrow {
-        width: 3rem;
-        height: 3rem;
+        margin: 0;
+        transform: scaleX(-1);
     }
 }

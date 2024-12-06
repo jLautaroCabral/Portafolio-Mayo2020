@@ -40,14 +40,12 @@
 }
 .hero__info--title h5{
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
 }
 
 .hero__info p {
     margin: 0;
     margin-bottom: 0.5rem;
     font-weight: 500;
-    font-size: 0.9rem;
 }
 
 
@@ -224,7 +222,6 @@ and (max-width: 500px) {
         will-change: auto;
         transform-style: flat;
         transform: none;
-        height: auto;
         width: 100%;
     }
 
@@ -233,8 +230,9 @@ and (max-width: 500px) {
     .column.column__center
     {
         width: 100%;
-        height: auto;
-        transform: none;   
+        transform: none;
+        padding: 1rem 0;   
+        height: 20%;
     }
 
     .column.column__center {
@@ -242,9 +240,11 @@ and (max-width: 500px) {
     }
     
     .column.column__bottom {
+        height: 20%;
         margin: 0;
         width: 100%;
         transform: none;
+        padding: 1rem 0;
     }
 
     .column__right:hover {

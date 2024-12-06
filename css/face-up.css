@@ -90,7 +90,6 @@
 and (max-width: 500px) {
     #gamedev_container {
         flex-direction: column;
-        overflow: auto;
         gap: 2rem;
     }
     #experience_section {

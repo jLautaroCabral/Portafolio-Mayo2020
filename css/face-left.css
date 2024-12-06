@@ -558,7 +558,8 @@ and (max-width: 500px) {
     #frontend_sections {
         flex-direction: column;
         width: 100%;
-        height: auto;
+        height: 87%;
+        gap: 2rem;
     }
     #frontend_sections section {
         width: 100%;
@@ -567,6 +568,9 @@ and (max-width: 500px) {
     }
     #frontend_sections .articles_container_A {
         order: -1;
+    }
+    .samples_container {
+        gap: 2rem;
     }
 
     .button {
