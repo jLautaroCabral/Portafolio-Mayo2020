@@ -52,14 +52,17 @@
     overflow: hidden;
     color: var(--white);
     font-size: 16px;
-    padding: 1.5rem;
     box-sizing: border-box;
 
-    padding-top: calc(env(safe-area-inset-top, 0) + 1.5rem);
-    padding-right: calc(env(safe-area-inset-right, 0) + 1.5rem);
-    padding-bottom: calc(env(safe-area-inset-bottom, 0) + 1.5rem);
-    padding-left: calc(env(safe-area-inset-left, 0) + 1.5rem);
+    padding-top: calc(env(safe-area-inset-top, 0) + 1rem);
+    padding-bottom: calc(env(safe-area-inset-bottom, 0) + 1rem);
+    
 }
+.face_content {
+    padding-left: calc(env(safe-area-inset-left, 0) + 1.5rem);
+    padding-right: calc(env(safe-area-inset-right, 0) + 1.5rem);
+}
+
 #background_video {
     position: absolute;
     top: 0;
