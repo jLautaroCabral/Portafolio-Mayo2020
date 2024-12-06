@@ -1,6 +1,6 @@
 /***************************** HERO */
 .hero {
-    margin: auto;
+    margin: 0 auto;
     margin-top: 1rem;
     display: flex;
     justify-content: center;

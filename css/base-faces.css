@@ -28,7 +28,6 @@
 #faceMain {
     position: relative;
     will-change: transform;
-    border: 1px solid green;
     width: var(--size-face);
     height: var(--size-face);
     margin: 0;

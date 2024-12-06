@@ -17,6 +17,13 @@
 .btn-downToCenter:hover {
     opacity: 1;
 }
+#downToCenterButton {
+    order: -1;
+    width: 100%;
+    height: 10%;
+    flex-direction: row;
+}
+
 .upArrow {
     background-image: url('../imgs/left-and-right-arrows.png');
     background-position: center;
@@ -72,10 +79,11 @@ and (max-width: 500px) {
         gap: 2rem;
     }
     
+    /*
     #downToCenterButton {
         order: -1;
         width: 100%;
         height: 10%;
         flex-direction: row;
-    }
+    }*/
 }
