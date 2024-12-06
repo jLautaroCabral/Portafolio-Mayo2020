@@ -64,7 +64,8 @@
 }
 
 .scroller_Y {
-    overflow-y:auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 @media screen

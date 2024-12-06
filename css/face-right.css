@@ -71,10 +71,6 @@
 }
 
 .leftArrow {
-    background-image: url('../imgs/left-and-right-arrows.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     transform: scaleX(-1);
     width: 4.2em;
     height: 4.2em;
@@ -110,5 +106,10 @@ and (max-width: 500px) {
         width: 100%;
         height: 10%;
         flex-direction: row;
+    }
+    
+    .leftArrow {
+        width: 3rem;
+        height: 3rem;
     }
 }

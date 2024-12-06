@@ -91,13 +91,8 @@
 }
 
 .x_arrow {
-    background-image: url('../imgs/left-and-right-arrows.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 4.2rem;
-    height: 4.2rem;
-    margin-bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .sx_inverse {
@@ -111,7 +106,7 @@
 @media screen
 and (max-width: 500px) {
     .face_body {
-        padding-bottom: 6rem;
+        padding-bottom: 8rem;
     }
     #background_video {
         position: absolute;

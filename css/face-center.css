@@ -189,8 +189,8 @@ and (max-width: 500px) {
         width: 50%;
     }
     .area__img {
-        width: 8rem;
-        height: 8rem;
+        width: 5rem;
+        height: 5rem;
         margin-bottom: 0;
     }
     .hero {

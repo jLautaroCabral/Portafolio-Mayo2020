@@ -76,12 +76,8 @@
 }
 
 .downArrow {
-    background-image: url('../imgs/left-and-right-arrows.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     margin-top: 0.5em;
     transform: rotate(90deg);
 }
@@ -95,6 +91,7 @@ and (max-width: 500px) {
     #gamedev_container {
         flex-direction: column;
         overflow: auto;
+        gap: 2rem;
     }
     #experience_section {
         flex-direction: column;
@@ -123,18 +120,19 @@ and (max-width: 500px) {
         height: auto;
         box-sizing: content-box;
         overflow: visible;
+        gap: 2rem;
     }
 
     #knowledge article {
         width: 100%;
         height: auto;
-        box-sizing: content-box;
-        padding: 0;
+        box-sizing: border-box;
+        padding: 2rem;
     }
 
     #upToCenterButton {
         width: 100%;
         height: 10%;
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 }
