@@ -88,7 +88,7 @@ let submarineDownKeyframes = new KeyframeEffect(
     buttonExample3,
     [
       { transform: 'translateY(0%)' }, 
-      { transform: 'translateY(180%)' } 
+      { transform: 'translateY(100%)' } 
     ], 
     optionsSubmarineDownKeyFrames 
 );
@@ -96,8 +96,8 @@ let submarineDownKeyframes = new KeyframeEffect(
 let submarineFloatKeyframes = new KeyframeEffect( 
     buttonExample3,
     [
-      { transform: 'translateY(180%)' }, // keyframe 
-      { transform: 'translateY(240%)' } // keyframe
+      { transform: 'translateY(100%)' }, // keyframe 
+      { transform: 'translateY(170%)' } // keyframe
     ], 
     optionsSubmarineFloatKeyFrames 
 );

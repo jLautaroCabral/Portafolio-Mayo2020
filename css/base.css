@@ -47,7 +47,7 @@ section {
     width: 100%;
     display: flex;
     box-sizing: border-box;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 
@@ -56,7 +56,7 @@ section {
     width: 100%;
     display: flex;
     box-sizing: border-box;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
@@ -98,4 +98,12 @@ section {
 }
 .item-description a {
     color: var(--white);
+}
+
+
+@media screen
+and (max-width: 1366px) {
+    html {
+        font-size: 10.5px;
+    }
 }

@@ -83,6 +83,28 @@
 }
 
 
+@media screen
+and (max-width: 500px) {
+    
+    .front-examples-item:nth-child(2) {
+        height: 100%;
+    }
+    .front-examples-item:last-child {
+        height: 100%;
+    }
+
+    .front-examples-item {
+        flex-direction: column;
+    }
+    .item-description {
+        width: 100%;
+    }
+    .item-example {
+        width: 100%;
+        height: 8rem;
+    }
+}
+
 /*----------------------- Animations Examples START*/
 .button {
     text-shadow: 0px 1px 1px #142850;
@@ -158,6 +180,8 @@
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
+    text-wrap-mode: wrap;
+    text-wrap: wrap;
 }
 .eyeanimation {
     width: 15%;
@@ -534,7 +558,8 @@ and (max-width: 500px) {
     #frontend_sections {
         flex-direction: column;
         width: 100%;
-        height: auto;
+        height: 87%;
+        gap: 2rem;
     }
     #frontend_sections section {
         width: 100%;
@@ -543,6 +568,13 @@ and (max-width: 500px) {
     }
     #frontend_sections .articles_container_A {
         order: -1;
+    }
+    .samples_container {
+        gap: 2rem;
+    }
+
+    .button {
+        width: 35%;
     }
 
     #leftToCenterButton {
