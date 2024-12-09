@@ -1,5 +1,5 @@
-const $faceMain = document.getElementById('faceMain');
-const $videoBackground = document.getElementById('background_video');
+let $faceMain = document.getElementById('faceMain');
+let $videoBackground = document.getElementById('background_video');
 
 function centerTo(String) {
     $faceMain.animate
@@ -80,15 +80,15 @@ function backgroundFromToCenter(String) {
 }
 
 
-const $backEndButton = document.getElementById('backEndButton');
-const $frontEndButton = document.getElementById('frontEndButton');
-const $devButton = document.getElementById('devButton');
-const $othersButton = document.getElementById('othersButton');
+let $backEndButton = document.getElementById('backEndButton');
+let $frontEndButton = document.getElementById('frontEndButton');
+let $devButton = document.getElementById('devButton');
+let $othersButton = document.getElementById('othersButton');
 
-const $leftToCenterButton = document.getElementById('leftToCenterButton');
-const $downToCenterButton = document.getElementById('downToCenterButton');
-const $upToCenterButton = document.getElementById('upToCenterButton');
-const $rightToCenterButton = document.getElementById('rightToCenterButton');
+let $leftToCenterButton = document.getElementById('leftToCenterButton');
+let $downToCenterButton = document.getElementById('downToCenterButton');
+let $upToCenterButton = document.getElementById('upToCenterButton');
+let $rightToCenterButton = document.getElementById('rightToCenterButton');
         
 $backEndButton.addEventListener('click', () => centerTo('translateX(-100%)'));
 $frontEndButton.addEventListener('click', () => centerTo('translateX(100%)'));
