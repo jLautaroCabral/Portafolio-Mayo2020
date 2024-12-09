@@ -57,17 +57,19 @@
 .frameworkpair {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 .frameworkpair span {
     font-size: 3rem;
     text-align: center;
 }
 .frameworkpair .tech_container {
-    flex-direction: row;
+    flex-direction: column;
     width: 20rem;
-    justify-content: space-evenly;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .leftArrow {
