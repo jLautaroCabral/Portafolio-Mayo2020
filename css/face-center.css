@@ -161,16 +161,19 @@
 }
 
 @media screen
-and (max-height: 800px) {
+and (max-width: 1366px) {
+
+    /*
     .hero {
         margin-top: 0;
     }
+        */
     .column.column__bottom {
-        margin-top: 7rem;
+        margin-top: 8rem;
     }
 
     .column {
-        font-size: 0.7rem;
+        font-size: 1.1rem;
     }
 }
 

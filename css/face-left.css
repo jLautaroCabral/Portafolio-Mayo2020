@@ -426,7 +426,13 @@ and (max-width: 500px) {
     background-color: #020202a2;
     overflow: hidden;
     display: flex;
+    flex-direction: row;
+    padding: 1rem;
 }
+.item__panel-api tr th {
+    text-align: start;
+}
+
 .panelApi__table {
     overflow: auto;
     height: 100%;
@@ -448,7 +454,7 @@ and (max-width: 500px) {
 
 .panelApi__table::-webkit-scrollbar-thumb {
     background-color: #273b47a2;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
 }
 .panelApi__table::-webkit-scrollbar-thumb:hover,
 .panelApi__table::-webkit-scrollbar-thumb:active {
@@ -469,15 +475,19 @@ and (max-width: 500px) {
 
 .panelApi__table::-webkit-scrollbar-track {
     background-color: #00000077;
+    border-radius: 0.5rem;
 }
 .panelApi__table::-moz-scrollbar-track {
     background-color: #00000077;
+    border-radius: 0.5rem;
 }
 .panelApi__table::-ms-scrollbar-track {
     background-color: #00000077;
+    border-radius: 0.5rem;
 }
 .panelApi__table::-o-scrollbar-track {
     background-color: #00000077;
+    border-radius: 0.5rem;
 }
 
 .panelApi__table table {
@@ -487,10 +497,16 @@ and (max-width: 500px) {
 
 .panelApi__table table thead tr th{
     text-align: left;
-    font-size: 0.9em;
-    padding: 0.8em;
-    padding-left: 0.5em;
+    font-size: 0.9rem;
+    padding: 0.8rem 0;
 }
+.panelApi__table table tr th{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 70%;
+}
+
 .panelApi__table table tbody tr:nth-child(even) {
     background: #85858536;
 }

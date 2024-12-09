@@ -2,21 +2,25 @@
     overflow-x: hidden;
     overflow-y: auto;
     width: 0.8rem;
+    border-radius: 0.5rem;
 }
 .scroller_Y::-moz-scrollbar {
     overflow-x: hidden;
     overflow-y: auto;
     width: 0.8rem;
+    border-radius: 0.5rem;
 }
 .scroller_Y::-ms-scrollbar {
     overflow-x: hidden;
     overflow-y: auto;
     width: 0.8rem;
+    border-radius: 0.5rem;
 }
 .scroller_Y::-o-scrollbar {
     overflow-x: hidden;
     overflow-y: auto;
     width: 0.8rem;
+    border-radius: 0.5rem;
 }
 .scroller_Y::-webkit-scrollbar-thumb {
     background-color: #273b47a2;
@@ -52,15 +56,19 @@
 }
 .scroller_Y::-webkit-scrollbar-track {
     background-color: var(--gray-s-transparent);
+    border-radius: 0.5rem;
 }
 .scroller_Y::-moz-scrollbar-track {
     background-color: var(--gray-s-transparent);
+    border-radius: 0.5rem;
 }
 .scroller_Y::-ms-scrollbar-track {
     background-color: var(--gray-s-transparent);
+    border-radius: 0.5rem;
 }
 .scroller_Y::-o-scrollbar-track {
     background-color: var(--gray-s-transparent);
+    border-radius: 0.5rem;
 }
 
 .scroller_Y {

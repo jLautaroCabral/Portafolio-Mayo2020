@@ -1,8 +1,126 @@
+let api = axios.create({
+    baseURL: 'https://api.themoviedb.org/3/',
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8',
+    },
+    params: {
+      'api_key': API_KEY,
+    },
+});
+
+let moviesContainer = document.querySelector('#tbody-countriesTable');
+let searchForm = document.querySelector('#searchForm');
+let searchFormInput = document.querySelector('#searchForm input');
+let searchFormBtn = document.querySelector('#searchBtn');
+
+
+searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    getMoviesBySearch(searchFormInput.value);
+})
+getTrendingMovies();
+
+
+function createMovies(movies, container) {
+    container.innerHTML = '';
+  
+    movies.forEach(movie => {
+        let movieRow = document.createElement('tr');
+        let movieRowName = document.createElement('th');
+        let movieRowScore = document.createElement('th');
+        let movieRowReleaseDate = document.createElement('th');
+        //
+        //th
+
+        movieRowName.innerHTML = movie.title;
+        
+        movieRowScore.innerHTML = parseFloat(movie.vote_average.toFixed(2));
+        movieRowReleaseDate.innerHTML = movie.release_date;
+        movieRow.appendChild(movieRowName);
+        movieRow.appendChild(movieRowScore);
+        movieRow.appendChild(movieRowReleaseDate);
+        container.appendChild(movieRow);
+        
+        /*
+      const movieContainer = document.createElement('div');
+      movieContainer.classList.add('movie-container');
+      movieContainer.addEventListener('click', () => {
+        location.hash = '#movie=' + movie.id;
+      });
+  
+      const movieImg = document.createElement('img');
+      movieImg.classList.add('movie-img');
+      movieImg.setAttribute('alt', movie.title);
+      movieImg.setAttribute(
+        'src',
+        'https://image.tmdb.org/t/p/w300' + movie.poster_path,
+      );
+  
+      movieContainer.appendChild(movieImg);
+      container.appendChild(movieContainer);
+      */
+    });
+}
+
+
+async function getMoviesBySearch(query) {
+    const { data } = await api('search/movie', {
+        params: {
+        query,
+        },
+    });
+    const movies = data.results;
+    console.log("The movies by search are...")
+    console.log(movies)
+    createMovies(movies, moviesContainer);
+}
+
+async function getTrendingMovies() {
+    const { data } = await api('trending/movie/day');
+    const movies = data.results;
+    //console.log("The trending movies are...")
+    //console.log(movies)
+    createMovies(movies, moviesContainer);
+}
+
+async function getMovieById(id) {
+    const { data: movie } = await api('movie/' + id);
+
+    const movieImgUrl = 'https://image.tmdb.org/t/p/w500' + movie.poster_path;
+    console.log(movieImgUrl)
+    headerSection.style.background = `
+        linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.35) 19.27%,
+        rgba(0, 0, 0, 0) 29.17%
+        ),
+        url(${movieImgUrl})
+    `;
+
+    movieDetailTitle.textContent = movie.title;
+    movieDetailDescription.textContent = movie.overview;
+    movieDetailScore.textContent = movie.vote_average;
+
+    //createCategories(movie.genres, movieDetailCategoriesList);
+
+    getRelatedMoviesId(id);
+}
+
+async function getRelatedMoviesId(id) {
+    const { data } = await api(`movie/${id}/recommendations`);
+    const relatedMovies = data.results;
+
+    //createMovies(relatedMovies, relatedMoviesContainer);
+}
+  
+
+
+/* Old stuff ------------------------------- */
 const api_Url = 'https://covid19-api.com/';
 const api_options_allCountries = 'country/all?format=json';
 const api_options_help = 'help/countries?format=json';
 
-(async function load (){
+async function load (){
 
     async function getData(url) {
         const response = await fetch(url, {
@@ -122,22 +240,5 @@ const api_options_help = 'help/countries?format=json';
         console.log(countryInfo);
         renderCountrySelected(countryInfo)
     }
-
-    /* function renderMovieList(list, $container, category) {
-        // actionList.data.movies
-        $container.children[0].remove();
-        list.forEach((movie) => {
-          const HTMLString = videoItemTemplate(movie, category);
-          const movieElement = createTemplate(HTMLString);
-          $container.append(movieElement);
-          const image = movieElement.querySelector('img');
-          image.addEventListener('load', (event) => {
-            event.srcElement.classList.add('fadeIn');
-          })
-          addEventClick(movieElement);
-        })
-    } */
-
-
-})();
+}
 

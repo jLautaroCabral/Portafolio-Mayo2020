@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Document</title>
+    <title>LautaroC | Portfolio</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/base-faces.css">
     <link rel="stylesheet" href="css/face-center.css">
@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/face-bottom.css">
     <link rel="stylesheet" href="css/face-up.css">
     <link rel="stylesheet" href="css/face-right.css">
-    <link rel="stylesheet" href="css/responsive-desinga.css">
     <link rel="stylesheet" href="css/scroller.css">
 </head>
 
@@ -38,7 +37,7 @@
                                     <div class="hero__img"></div>
                                     <div class="hero__info--name">
                                         <h3>Lautaro Cabral</h3>
-                                        <h4>Software Developer</h4>
+                                        <h3>Software Developer</h3>
                                     </div>
                                 </div>
                                 <div class="hero__info">
@@ -159,85 +158,23 @@
                                     <article class="front-examples-item s_transparent_box blur">
                                         <div>
                                             <h2>Web Services integrations</h2>
-                                            <p>With JavaScript I can obtain and integrate to my project the information
-                                                provided by
-                                                a third party API. As an example, here I obtain information about countries
-                                                affected
-                                                by COVID-19 through the <a href="https://covid19-api.com/"
-                                                    target="_blank">following
-                                                    API</a>.</p>
+                                            <p>With JavaScript, among many other things, I can obtain and integrate to my project the information provided by a third party web services. As an example, here is a panel that obtains movies data by the <a href="https://developer.themoviedb.org/docs/getting-started" target="_blank">following API</a>.</p>
                                         </div>
                                         <div class="item__panel-api" id="item__panel-api">
                                             <div class="panelApi__table">
+                                                <form id="searchForm" class="header-searchForm">
+                                                    <input type="text" placeholder="Search your favorite movie!" />
+                                                    <button type="submit" id="searchBtn">🔍</button>
+                                                </form>
                                                 <table style="width:100%">
                                                     <thead>
                                                         <tr>
-                                                            <th>País</th>
-                                                            <th>Último cambio</th>
-                                                            <th>Última actualización</th>
+                                                            <th>Name</th>
+                                                            <th>Avg Score</th>
+                                                            <th>Release Date</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody id="tbody-countriesTable">
-                                                        <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                        </tr>
                                                         <tr>
                                                             <th>Sample</th>
                                                             <th>Sample</th>
@@ -795,8 +732,10 @@
                 <source src="imgs/video-background.mp4" type='video/mp4' />
             </video>
         </div>
-        <script src="js/movement.js"></script>
+        <script src="js/faces-navigation.js"></script>
+        <script src="js/secret.js"></script>
         <script src="js/face-left-animations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="js/face-left-apiconnection.js"></script>
 </body>
 
