@@ -161,7 +161,7 @@
                                             <p>With JavaScript, among many other things, I can obtain and integrate to my project the information provided by a third party web services. As an example, here is a panel that obtains movies data by the <a href="https://developer.themoviedb.org/docs/getting-started" target="_blank">following API</a>.</p>
                                         </div>
                                         <div class="item__panel-api" id="item__panel-api">
-                                            <div class="panelApi__table">
+                                            <div class="panelApi__table scroller_Y">
                                                 <form id="searchForm" class="header-searchForm">
                                                     <input type="text" placeholder="Search your favorite movie!" />
                                                     <button type="submit" id="searchBtn">🔍</button>
@@ -176,20 +176,16 @@
                                                     </thead>
                                                     <tbody id="tbody-countriesTable">
                                                         <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
+                                                            <th>Error: API not working</th>
+                                                            <th></th>
+                                                            <th></th>
                                                         </tr>
-                                                        <tr>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                            <th>Sample</th>
-                                                        </tr>
-                                                    </tbody>
                                                 </table>
                                             </div>
-                                            <div class="panelApi__tableInfo" id="tableInfo-countrySelected">
-                                                <p>Seleccione un país para obtener su información.</p>
+                                            <div class="panelApi__tableInfo scroller_Y" id="tableInfo-countrySelected">
+                                                <h1 class="movieDetail-title"></h1>
+                                                <span class="movieDetail-score"></span>
+                                                <p class="movieDetail-description">Select a movie to get its info.</p>
                                             </div>
                                         </div>
                                     </article>

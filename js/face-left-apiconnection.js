@@ -11,7 +11,10 @@ let api = axios.create({
 let moviesContainer = document.querySelector('#tbody-countriesTable');
 let searchForm = document.querySelector('#searchForm');
 let searchFormInput = document.querySelector('#searchForm input');
-let searchFormBtn = document.querySelector('#searchBtn');
+
+let movieDetailTitle = document.querySelector('.movieDetail-title');
+let movieDetailDescription = document.querySelector('.movieDetail-description');
+let movieDetailScore = document.querySelector('.movieDetail-score');
 
 
 searchForm.addEventListener('submit', (e) => {
@@ -40,7 +43,11 @@ function createMovies(movies, container) {
         movieRow.appendChild(movieRowScore);
         movieRow.appendChild(movieRowReleaseDate);
         container.appendChild(movieRow);
-        
+      
+        movieRow.addEventListener('click', () => {
+            getMovieById(movie.id);
+        });
+
         /*
       const movieContainer = document.createElement('div');
       movieContainer.classList.add('movie-container');
@@ -85,32 +92,12 @@ async function getTrendingMovies() {
 
 async function getMovieById(id) {
     const { data: movie } = await api('movie/' + id);
-
-    const movieImgUrl = 'https://image.tmdb.org/t/p/w500' + movie.poster_path;
-    console.log(movieImgUrl)
-    headerSection.style.background = `
-        linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.35) 19.27%,
-        rgba(0, 0, 0, 0) 29.17%
-        ),
-        url(${movieImgUrl})
-    `;
+    //const movieImgUrl = 'https://image.tmdb.org/t/p/w500' + movie.poster_path;
+    //console.log(movieImgUrl)
 
     movieDetailTitle.textContent = movie.title;
     movieDetailDescription.textContent = movie.overview;
     movieDetailScore.textContent = movie.vote_average;
-
-    //createCategories(movie.genres, movieDetailCategoriesList);
-
-    getRelatedMoviesId(id);
-}
-
-async function getRelatedMoviesId(id) {
-    const { data } = await api(`movie/${id}/recommendations`);
-    const relatedMovies = data.results;
-
-    //createMovies(relatedMovies, relatedMoviesContainer);
 }
   
 
